@@ -203,11 +203,27 @@
           </ul>
       </section>
 
-      <aside class="news">
+      <article class="news">
         <h2 class="news-name">Новое в нашем блоге</h2>
-        <p class="news-text">10 способов сервировки <br>
-          фруктовых щербетов <br>
-          к столу</p>
+          <p class="news-text">
+            <a class="news-link" href="#">10 способов сервировки <br>
+            фруктовых щербетов <br>
+            к столу</a>
+          </p>
+      </article>
+
+      <aside class="subscription">
+        <h2 class="visually-hidden subscription-name">Подпишитесь на рассылку</h2>
+        <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда <br>
+          в курсе всего самого вкусного, что у нас происходит. Обещаем <br>
+          не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscription-email">Email</label>
+            <input class="field"  placeholder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
+            <button class="subscription-button" type="submit">
+              Отправить
+            </button>
+          </form>
       </aside>
 
     </main>
