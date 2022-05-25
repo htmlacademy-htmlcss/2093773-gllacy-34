@@ -7,7 +7,7 @@
   <body>
 
     <header class="page-header">
-      <nav class="navigation">
+      <nav class="navigation navigation-left">
           <a class="main-header-logo-link" href="index.html">
             <img src="#" alt="Логотип Gllacy Shop.">
           </a>
@@ -22,8 +22,10 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
+      </nav>
+      <nav class="navigation navigation-right">
+        <a class="header-contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="navigation-list navigation-user">
-          <a class="header-contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -93,6 +95,7 @@
               <span class="visually-hidden">3 слайд</span>
             </button>
           </div>
+         </div>
           <footer class="slider-footer">
             <section class="footer-social">
               <h2 class="visually-hidden footer-social-name">Мы в социальных сетях</h2>
@@ -119,8 +122,7 @@
 
       <section class="promo">
         <h2 class="visually-hidden promo-name">Акции</h2>
-        <p class="promo-text">Заказывайте мороженое <br>
-          и получайте подарки!</p>
+        <p class="promo-text">Заказывайте мороженое и получайте подарки!</p>
         <div class="promo-offer">
           <h3 class="promo-offer-name">Малинка даром!</h3>
           <p class="promo-offer-text">При покупке 2 кг любого фруктового
@@ -138,42 +140,65 @@
       <section class="popular">
         <h2 class="visually-hidden popular-name">Самые популярные вкусы мороженого</h2>
         <p class="popular-text">Попробуйте самые популярные вкусы нашего мороженого</p>
-        <ul class="popular-list">
-          <li class="popular-item">
-            <h3 class="popular-item-name">Малинка</h3>
-            <p class="popular-item-text">Сливочное мороженое с малиновым джемом</p>
-              <span class="popular-item-price">310 ₽/кг</span>
-              <img class="popular-item-img" src="" alt="Шарик ярко-розового мороженого.">
-              <button class="visually-hidden button popular-item-button" type="button">
-                Добавить в корзину
-              </button>
+        <ul class="product-list">
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Шарик ярко-розового мороженого.">
+              <h3 class="product-card-name">Малинка</h3>
+              <p>Сливочное мороженое с малиновым джемом</p>
+            </a>
+            <span class="product-card-price">310 ₽/кг</span>
+            <a class="button product-card-button" href="#">Добавить в корзину</a>
           </li>
-          <li class="popular-item">
-            <h3 class="popular-item-name">Фисташка</h3>
-            <p class="popular-item-text">Фисташковый пломбир с кусочками шоколада</p>
-              <span class="popular-item-price">340 ₽/кг</span>
-              <img class="popular-item-img" src="" alt="Шарик бледно-зеленого мороженого с шоколадкой крошкой.">
-              <button class="visually-hidden button popular-item-button" type="button">
-                Добавить в корзину
-              </button>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Шарик бледно-зеленого мороженого с шоколадкой крошкой.">
+              <h3 class="product-card-name">Фисташка</h3>
+              <p>Фисташковый пломбир с кусочками шоколада</p>
+            </a>
+            <span class="product-card-price">340 ₽/кг</span>
+            <a class="button product-card-button" href="#">Добавить в корзину</a>
           </li>
-          <li class="popular-item">
-            <h3 class="popular-item-name">Черника</h3>
-            <p class="popular-item-text">Крем-брюле с черничным джемом</p>
-              <span class="popular-item-price">330 ₽/кг</span>
-              <img class="popular-item-img" src="" alt="Шарик бежевого мороженого с фиолетовыми разводами.">
-              <button class="visually-hidden button popular-item-button" type="button">
-                Добавить в корзину
-              </button>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Шарик бежевого мороженого с фиолетовыми разводами.">
+              <h3 class="product-card-name">Черника</h3>
+              <p>Крем-брюле с черничным джемом</p>
+            </a>
+            <span class="product-card-price">330 ₽/кг</span>
+            <a class="button product-card-button" href="#">Добавить в корзину</a>
           </li>
-          <li class="popular-item">
-            <h3 class="popular-item-name">Бабл-гам</h3>
-            <p class="popular-item-text">Ванильный пломбир со сладкой посыпкой</p>
-              <span class="popular-item-price">320 ₽/кг</span>
-              <img class="popular-item-img" src="" alt="Шарик голубого мороженого с радужной посыпкой.">
-              <button class="visually-hidden button popular-item-button" type="button">
-                Добавить в корзину
-              </button>
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <img class="product-card-image" src="#" alt="Шарик голубого мороженого с радужной посыпкой.">
+              <h3 class="product-card-name">Бабл-гам</h3>
+              <p>Ванильный пломбир со сладкой посыпкой</p>
+            </a>
+            <span class="product-card-price">320 ₽/кг</span>
+            <a class="button product-card-button" href="#">Добавить в корзину</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden footer-social-name">Мы в социальных сетях</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button-social" href="https://t.me/htmlacademy">
+              <span class="visually-hidden footer-social-item-name">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-social" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden footer-social-item-name">Vkontakte</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden footer-social-item-name">Youtube</span>
+            </a>
           </li>
         </ul>
       </section>
