@@ -43,7 +43,7 @@
           </li>
         </ul>
       </nav>
-      <div>
+      <div class="popup-search">
         <a class="header-phone-link" href="tel:+78005558628">
           +7 800 555-86-28
         </a>
@@ -52,13 +52,37 @@
             <span class="visually-hidden">Поиск</span>
           </a>
           <input
-            class="search-popup"
             type="search"
+            id="search"
             name="search"
             placeholder="Поиск по сайту"
           />
         </div>
-        <a class="header-button" href="#">Вход</a>
+        <div class="popup-entry">
+          <a class="header-button" href="#">Вход</a>
+          <div class="popup-entry-form">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <h3>Личный кабинет</h3>
+              <input
+                type="email"
+                id="login-name"
+                name="login-name"
+                placeholder="email@example.com"
+              />
+              <input
+                type="password"
+                id="login-password"
+                name="login-password"
+                placeholder="******"
+              />
+              <button type="submit">Войти</button>
+            </form>
+            <div class="popup-entry-link">
+              <a class="entry-link" href="#">Забыли пароль?</a>
+              <a class="entry-link" href="#">Регистрация</a>
+            </div>
+          </div>
+        </div>
         <a class="header-button" href="#">
           <span class="visually-hidden">Корзина</span>Пусто
         </a>
