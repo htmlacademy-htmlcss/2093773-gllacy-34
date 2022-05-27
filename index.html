@@ -47,11 +47,19 @@
         <a class="header-phone-link" href="tel:+78005558628">
           +7 800 555-86-28
         </a>
-        <a class="header-search-link header-button" href="#">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-        <a class="header-entry-link header-button" href="#">Вход</a>
-        <a class="header-basket-link header-button" href="#">
+        <div>
+          <a class="header-button" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <input
+            class="search-popup"
+            type="search"
+            name="search"
+            placeholder="Поиск по сайту"
+          />
+        </div>
+        <a class="header-button" href="#">Вход</a>
+        <a class="header-button" href="#">
           <span class="visually-hidden">Корзина</span>Пусто
         </a>
       </div>
@@ -278,9 +286,7 @@
         <section class="news">
           <h2 class="news-name">Новое в нашем блоге</h2>
           <p class="news-text">
-            <a class="news-link" href="#"
-              >10 способов сервировки фруктовых щербетов к столу
-            </a>
+            10 способов сервировки фруктовых щербетов к столу
           </p>
         </section>
         <section class="subscription">
