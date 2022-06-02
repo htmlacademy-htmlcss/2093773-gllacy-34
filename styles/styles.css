@@ -30,12 +30,17 @@ body {
   background-color: #FEAFC3;
 }
 
-.navigation-list {
+.navigation-link {
+  color: #2D3440;
   line-height: 20px;
 }
 
 .catalog-menu-list {
   background-color: #FCFCFC;
+}
+
+.catalog-menu-link {
+  color: #2D3440;
   font-size: 14px;
   line-height: 20px;
 }
@@ -45,12 +50,29 @@ body {
 }
 
 .header-phone-link {
+  color: #2D3440;
   font-weight: 700;
   line-height: 20px;
 }
 
-.popup-search, .popup-entry {
+.header-button {
+  color: #2D3440;
   font-size: 14px;
   line-height: 20px;
 }
 
+.popup-search, .popup-entry-form, .basket-empty, .basket-full {
+  background-color: #FCFCFC;
+}
+
+.popup-entry-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.entry-link {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+}
