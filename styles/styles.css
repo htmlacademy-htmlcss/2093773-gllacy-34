@@ -33,6 +33,8 @@ body {
 .navigation-link {
   color: #2D3440;
   line-height: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .catalog-menu-list {
@@ -43,6 +45,8 @@ body {
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
+  text-decoration: none;
 }
 
 .catalog-new-link {
@@ -53,12 +57,16 @@ body {
   color: #2D3440;
   font-weight: 700;
   line-height: 20px;
+  text-align: left;
+  text-decoration: none;
 }
 
 .header-button {
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
+  text-decoration: none;
 }
 
 .popup-search, .popup-entry-form, .basket-empty, .basket-full {
@@ -69,10 +77,20 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  text-align: left;
 }
 
 .entry-link {
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
+}
+
+.basket-empty-name {
+  text-align: center;
+}
+
+.basket-full {
+  text-align: left;
 }
