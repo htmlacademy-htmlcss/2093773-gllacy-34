@@ -27,7 +27,17 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
-  background-color: #FEAFC3;
+  background: #FEAFC3;
+}
+
+.button-white {
+  font-family: inherit;
+  background: #FCFCFC;
+}
+
+.button-pink {
+  font-family: inherit;
+  background: #FF2F64;
 }
 
 .navigation-link {
@@ -38,7 +48,7 @@ body {
 }
 
 .catalog-menu-list {
-  background-color: #FCFCFC;
+  background: #FCFCFC;
 }
 
 .catalog-menu-link {
@@ -70,7 +80,7 @@ body {
 }
 
 .popup-search, .popup-entry-form, .basket-empty, .basket-full {
-  background-color: #FCFCFC;
+  background: #FCFCFC;
 }
 
 .popup-entry-name {
@@ -116,19 +126,15 @@ body {
   text-decoration: none;
 }
 
-.button-white {
-  background-color: #FCFCFC;
-}
-
 .slide-second {
-  background-color: #69A9FF;
+  background: #69A9FF;
 }
 
 .slide-third {
-  background-color: #FCC850;
+  background: #FCC850;
 }
 
-.promo-name, .popular-name {
+.promo-name, .popular-name, .advantages-text {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -136,7 +142,7 @@ body {
 }
 
 .promo-offer {
-  background-color: #FF7799;
+  background: #FF7799;
 }
 
 .offer-raspberry {
@@ -185,4 +191,143 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: left;
+}
+
+.advantages-item-text {
+  text-align: left;
+}
+
+.advantages {
+  background-image: url(../images/backgrounds/background-waffle.png);
+  background-repeat: no-repeat;
+  background: #FCFCFC;
+}
+
+.news {
+  background-image: url(../images/backgrounds/background-blog.jpg);
+}
+
+.news-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.news-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.subscription {
+  background-image: url(../images/backgrounds/background-subscription.png);
+  background-repeat: no-repeat;
+  background: #FCFCFC;
+}
+
+.subscription-text{
+  text-align: left;
+}
+
+.delivery {
+  background-image: url(../images/backgrounds/background-delivery.jpg);
+  background-repeat: no-repeat;
+}
+
+.delivery-content-name {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: left;
+}
+
+.delivery-content-text {
+  text-align: left;
+}
+
+.delivery-forms {
+  background: #FCFCFC;
+}
+
+.delivery-forms-text {
+  text-align: left;
+}
+
+.form-label {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+.contacts {
+  background-image: url(../images/backgrounds/background-adress.jpg);
+  background-repeat: no-repeat;
+}
+
+.contacts-name {
+  text-align: left;
+}
+
+.contacts-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.contacts-address {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.contacts-phone {
+  color: #2D3440;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.contacts-phone-text {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.subscription-button, .delivery-button, .contacts-button {
+  color: #FCFCFC;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.link-item {
+  color: #2D3440;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.suppliers{
+  font-weight: 700;
+}
+
+.footer-copyright-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.footer-copyright-link {
+  color: #2D3440;
 }
