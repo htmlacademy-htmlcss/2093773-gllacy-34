@@ -94,3 +94,95 @@ body {
 .basket-full {
   text-align: left;
 }
+
+.slide-content-name {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: left;
+}
+
+.slide-content-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.slide-content-link, .promo-offer-link {
+  font-weight: 700;
+  color: #2D3440;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-white {
+  background-color: #FCFCFC;
+}
+
+.slide-second {
+  background-color: #69A9FF;
+}
+
+.slide-third {
+  background-color: #FCC850;
+}
+
+.promo-name, .popular-name {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.promo-offer {
+  background-color: #FF7799;
+}
+
+.offer-raspberry {
+  background-image: url(../images/promo/promo-rasberry.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.offer-marshmallow {
+  background-image: url(../images/promo/promo-marshmallow.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.promo-offer-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.promo-offer-text {
+  line-height: 22px;
+  text-align: left;
+}
+
+.product-card {
+  background: #FCFCFC;
+}
+
+.product-card-link {
+  color: #2D3440;
+  text-decoration: none;
+  text-align: center;
+}
+
+.product-card-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.product-card-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+}
