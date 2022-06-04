@@ -101,6 +101,10 @@ body {
   background: #FCFCFC;
 }
 
+header input {
+  font-family: inherit;
+}
+
 .popup-entry-name {
   font-weight: 700;
   font-size: 24px;
@@ -220,6 +224,10 @@ body {
   background: #FCFCFC;
 }
 
+.subscription input {
+  font-family: inherit;
+}
+
 .delivery {
   background-image: url(../images/backgrounds/background-delivery.jpg);
   background-repeat: no-repeat;
@@ -233,6 +241,10 @@ body {
 
 .delivery-forms {
   background: #FCFCFC;
+}
+
+.delivery input {
+  font-family: inherit;
 }
 
 .form-label {
