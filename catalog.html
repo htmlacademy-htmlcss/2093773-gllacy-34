@@ -54,7 +54,7 @@
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link breadcrumbs-catalog">Каталог</a>
           </li>
         </ul>
         <h1 class="inner-header-name">Сливочное мороженое</h1>
@@ -67,7 +67,8 @@
           action="https://echo.htmlacademy.ru/"
           method="get"
         >
-          <select class="select-control" aria-label="Сортировка">
+          <label class="catalog-filter-name" for="select">Сортировка:</label>
+          <select class="select-control" aria-label="Сортировка" id="select">
             <option value="popular">по популярности</option>
             <option value="cheap">по возрастанию цены</option>
             <option value="expensive">по убыванию цены</option>
@@ -188,9 +189,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button button-catalog-filter" type="submit">
-            Применить
-          </button>
+          <button class="button-catalog-filter" type="submit">Применить</button>
         </form>
         <ul class="product-list">
           <li class="product-card">
@@ -400,12 +399,12 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link">1</a>
+            <a class="pagination-link" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -425,7 +424,7 @@
             </a>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">
+        <button class="button-white" type="button">
           Показать еще
         </button>
       </section>

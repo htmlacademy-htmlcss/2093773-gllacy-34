@@ -30,13 +30,41 @@ body {
   background: #FEAFC3;
 }
 
+.header-button {
+  background: #FCFCFC 30%;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
 .button-white {
   font-family: inherit;
   background: #FCFCFC;
+  font-weight: 700;
+  color: #2D3440;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .button-pink {
   font-family: inherit;
+  background: #FF2F64;
+  color: #FCFCFC;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button-catalog-filter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.product-card-button {
   background: #FF2F64;
 }
 
@@ -55,7 +83,6 @@ body {
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
-  text-align: left;
   text-decoration: none;
 }
 
@@ -67,15 +94,6 @@ body {
   color: #2D3440;
   font-weight: 700;
   line-height: 20px;
-  text-align: left;
-  text-decoration: none;
-}
-
-.header-button {
-  color: #2D3440;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: left;
   text-decoration: none;
 }
 
@@ -87,43 +105,27 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: left;
 }
 
 .entry-link {
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
-  text-align: left;
 }
 
 .basket-empty-name {
   text-align: center;
 }
 
-.basket-full {
-  text-align: left;
-}
-
 .slide-content-name {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-  text-align: left;
 }
 
 .slide-content-text {
   font-size: 18px;
   line-height: 24px;
-  text-align: left;
-}
-
-.slide-content-link, .promo-offer-link {
-  font-weight: 700;
-  color: #2D3440;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
 }
 
 .slide-second {
@@ -134,7 +136,7 @@ body {
   background: #FCC850;
 }
 
-.promo-name, .popular-name, .advantages-text {
+.main-headlines {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -161,12 +163,10 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: left;
 }
 
 .promo-offer-text {
   line-height: 22px;
-  text-align: left;
 }
 
 .product-card {
@@ -190,11 +190,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
-}
-
-.advantages-item-text {
-  text-align: left;
 }
 
 .advantages {
@@ -211,24 +206,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: left;
 }
 
 .news-text {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: left;
 }
 
 .subscription {
   background-image: url(../images/backgrounds/background-subscription.png);
   background-repeat: no-repeat;
   background: #FCFCFC;
-}
-
-.subscription-text{
-  text-align: left;
 }
 
 .delivery {
@@ -240,25 +229,15 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  text-align: left;
-}
-
-.delivery-content-text {
-  text-align: left;
 }
 
 .delivery-forms {
   background: #FCFCFC;
 }
 
-.delivery-forms-text {
-  text-align: left;
-}
-
 .form-label {
   font-weight: 700;
   line-height: 20px;
-  text-align: left;
 }
 
 .contacts {
@@ -267,14 +246,9 @@ body {
 }
 
 .contacts-name {
-  text-align: left;
-}
-
-.contacts-name {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  text-align: left;
 }
 
 .contacts-address {
@@ -282,7 +256,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
 }
 
 .contacts-phone {
@@ -291,21 +264,11 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
 }
 
 .contacts-phone-text {
   font-size: 14px;
   line-height: 20px;
-  text-align: left;
-}
-
-.subscription-button, .delivery-button, .contacts-button {
-  color: #FCFCFC;
-  text-decoration: none;
-  font-weight: 700;
-  line-height: 20px;
-  text-align: center;
 }
 
 .link-item {
@@ -314,7 +277,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  text-align: left;
 }
 
 .suppliers{
@@ -325,9 +287,46 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  text-align: left;
 }
 
 .footer-copyright-link {
   color: #2D3440;
+}
+
+.inner-header-name {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-catalog {
+  text-decoration: underline;
+}
+
+.catalog-filter-name {
+  font-size: 14px;
+  line-height: 20px;
+}
+.control {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  color: #2D3440;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-current {
+  background: #FCFCFC;
 }
