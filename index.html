@@ -57,12 +57,14 @@
           <a class="header-button" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
-          <input
-            type="search"
-            id="search"
-            name="search"
-            placeholder="Поиск по сайту"
-          />
+          <div class="popup-search-form">
+            <input
+              type="search"
+              id="search"
+              name="search"
+              placeholder="Поиск по сайту"
+            />
+          </div>
         </div>
         <div class="popup-entry">
           <a class="header-button" href="#">Вход</a>
@@ -210,7 +212,9 @@
       </section>
 
       <section class="promo">
-        <h2 class="main-headlines">Заказывайте мороженое и получайте подарки!</h2>
+        <h2 class="main-headlines">
+          Заказывайте мороженое и получайте подарки!
+        </h2>
         <div class="promo-offer offer-raspberry">
           <h3 class="promo-offer-name">Малинка даром!</h3>
           <p class="promo-offer-text">
@@ -312,40 +316,43 @@
       </section>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="main-headlines">
-          Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
-          собственного производства на развес
-        </p>
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <p class="advantages-item-text">
-              Всё наше мороженое изготавливается на собственном производстве с
-              использованием современного оборудования и проверенных временем
-              технологий.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages-item-text">
-              Для приготовления мороженого используются сливки и молоко
-              высочайшего качества. Все ингредиенты и добавки произведены из
-              натурального сырья.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages-item-text">
-              Закупка ингредиентов производится только у проверенных фермерских
-              хозяйств, с которыми нас связывает долговременное сотрудничество.
-            </p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages-item-text">
-              Доставка нашего мороженого осуществляется в специальном термопаке,
-              который не даёт мороженому растаять и позволяет сохранить
-              превосходный вкус.
-            </p>
-          </li>
-        </ul>
+        <div class="advantages-wrapper">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <p class="main-headlines">
+            Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
+            собственного производства на развес
+          </p>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <p class="advantages-item-text">
+                Всё наше мороженое изготавливается на собственном производстве с
+                использованием современного оборудования и проверенных временем
+                технологий.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <p class="advantages-item-text">
+                Для приготовления мороженого используются сливки и молоко
+                высочайшего качества. Все ингредиенты и добавки произведены из
+                натурального сырья.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <p class="advantages-item-text">
+                Закупка ингредиентов производится только у проверенных
+                фермерских хозяйств, с которыми нас связывает долговременное
+                сотрудничество.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <p class="advantages-item-text">
+                Доставка нашего мороженого осуществляется в специальном
+                термопаке, который не даёт мороженому растаять и позволяет
+                сохранить превосходный вкус.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="news-subscription">
@@ -356,32 +363,34 @@
           </p>
         </section>
         <section class="subscription">
-          <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
-          <p class="subscription-text">
-            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
-            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-            всякой ненужной ерунды. Честно =)
-          </p>
-          <form
-            class="subscription-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label class="visually-hidden" for="subscription-email">
-              Email
-            </label>
-            <input
-              class="field"
-              placeholder="email@example.com"
-              type="email"
-              name="subscription-email"
-              id="subscription-email"
-              required
-            />
-            <button class="subscription-button button-pink" type="submit">
-              Отправить
-            </button>
-          </form>
+          <div class="subscription-wrapper">
+            <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
+            <p class="subscription-text">
+              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
+              самого вкусного, что у нас происходит. Обещаем не спамить и не
+              слать всякой ненужной ерунды. Честно =)
+            </p>
+            <form
+              class="subscription-form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <label class="visually-hidden" for="subscription-email">
+                Email
+              </label>
+              <input
+                class="field"
+                placeholder="email@example.com"
+                type="email"
+                name="subscription-email"
+                id="subscription-email"
+                required
+              />
+              <button class="subscription-button button-pink" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
         </section>
       </section>
 
@@ -441,17 +450,23 @@
       </section>
 
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <h3 class="contacts-name">Адрес главного офиса и офлайн-магазина:</h3>
-        <address class="contacts-address">
-          <p class="contacts-address-text">
-            наб. реки Карповки, 5 лит П, Санкт-Петербург
-          </p>
-        </address>
-        <h3 class="contacts-name">Для заказов по телефону:</h3>
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <span class="contacts-phone-text">(с 10 до 20 ежедневно)</span>
-        <a class="contacts-button button-pink" href="#">Форма обратной связи</a>
+        <div class="contacts-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <h3 class="contacts-name">Адрес главного офиса и офлайн-магазина:</h3>
+          <address class="contacts-address">
+            <p class="contacts-address-text">
+              наб. реки Карповки, 5 лит П, Санкт-Петербург
+            </p>
+          </address>
+          <h3 class="contacts-name">Для заказов по телефону:</h3>
+          <a class="contacts-phone" href="tel:+78128121212"
+            >+7 (812) 812-12-12</a
+          >
+          <span class="contacts-phone-text">(с 10 до 20 ежедневно)</span>
+          <a class="contacts-button button-pink" href="#"
+            >Форма обратной связи</a
+          >
+        </div>
       </section>
     </main>
 

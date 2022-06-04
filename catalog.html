@@ -69,125 +69,131 @@
         >
           <label class="catalog-filter-name" for="select">Сортировка:</label>
           <select class="select-control" aria-label="Сортировка" id="select">
-            <option value="popular">по популярности</option>
-            <option value="cheap">по возрастанию цены</option>
-            <option value="expensive">по убыванию цены</option>
+            <div class="catalog-filter-backgroung">
+              <option value="popular">по популярности</option>
+              <option value="cheap">по возрастанию цены</option>
+              <option value="expensive">по убыванию цены</option>
+            </div>
           </select>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-name">Цена:</legend>
-            <div>диапазон цены</div>
+            <div class="catalog-filter-backgroung">диапазон цены</div>
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-name">Жирность:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="product-group"
-                    value="percent-0"
-                  />
-                  0%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="product-group"
-                    value="percent-until-10"
-                    checked
-                  />
-                  до 10%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="product-group"
-                    value="percent-until-30"
-                  />
-                  до 30%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="product-group"
-                    value="percent-until-30"
-                  />
-                  выше 30%
-                </label>
-              </li>
-            </ul>
+            <div class="catalog-filter-backgroung">
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="product-group"
+                      value="percent-0"
+                    />
+                    0%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="product-group"
+                      value="percent-until-10"
+                      checked
+                    />
+                    до 10%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="product-group"
+                      value="percent-until-30"
+                    />
+                    до 30%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="product-group"
+                      value="percent-until-30"
+                    />
+                    выше 30%
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-name">Наполнители:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="chocolate"
-                    checked
-                  />
-                  шоколадные
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="sugar-sprinkles"
-                    checked
-                  />
-                  сахарные посыпки
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="fruits"
-                  />
-                  фрукты
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="syrups"
-                  />
-                  сиропы
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="jams"
-                  />
-                  джемы
-                </label>
-              </li>
-            </ul>
+            <div class="catalog-filter-backgroung">
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="chocolate"
+                      checked
+                    />
+                    шоколадные
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="sugar-sprinkles"
+                      checked
+                    />
+                    сахарные посыпки
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="fruits"
+                    />
+                    фрукты
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="syrups"
+                    />
+                    сиропы
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="jams"
+                    />
+                    джемы
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <button class="button-catalog-filter" type="submit">Применить</button>
         </form>
@@ -399,7 +405,10 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled" href="#">
+            <a
+              class="pagination-link pagination-prev pagination-disabled"
+              href="#"
+            >
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
@@ -424,9 +433,7 @@
             </a>
           </li>
         </ul>
-        <button class="button-white" type="button">
-          Показать еще
-        </button>
+        <button class="button-white" type="button">Показать еще</button>
       </section>
     </main>
 
@@ -456,7 +463,7 @@
       <div class="footer-link">
         <ul class="footer-link-list">
           <li class="footer-link-item">
-            <a class="link-item" href="#">Для поставщиков</a>
+            <a class="link-item suppliers" href="#">Для поставщиков</a>
           </li>
           <li class="footer-link-item">
             <a class="link-item" href="#">О производстве</a>

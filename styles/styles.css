@@ -31,7 +31,7 @@ body {
 }
 
 .header-button {
-  background: #FCFCFC 30%;
+  background: rgba(252, 252, 252, 0.3);
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
@@ -59,6 +59,7 @@ body {
 }
 
 .button-catalog-filter {
+  background: rgba(252, 252, 252, 0.3);
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -77,6 +78,9 @@ body {
 
 .catalog-menu-list {
   background: #FCFCFC;
+  width: 135px;
+  height: 188px;
+  border-radius: 4px;
 }
 
 .catalog-menu-link {
@@ -97,9 +101,34 @@ body {
   text-decoration: none;
 }
 
-.popup-search, .popup-entry-form, .basket-empty, .basket-full {
+.popup-search-form {
   background: #FCFCFC;
+  width: 356px;
+  height: 96px;
+  border-radius: 4px;
 }
+
+.popup-entry-form {
+  background: #FCFCFC;
+  width: 420px;
+  height: 350px;
+  border-radius: 4px;
+}
+
+.basket-empty {
+  background: #FCFCFC;
+  width: 288px;
+  height: 156px;
+  border-radius: 4px;
+}
+
+.basket-full {
+  background: #FCFCFC;
+  width: 441px;
+  height: 382px;
+  border-radius: 4px;
+}
+
 
 header input {
   font-family: inherit;
@@ -118,7 +147,16 @@ header input {
 }
 
 .basket-empty-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
   text-align: center;
+}
+
+.basket-full-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .slide-content-name {
@@ -149,6 +187,9 @@ header input {
 
 .promo-offer {
   background: #FF7799;
+  width: 570px;
+  height: 268px;
+  border-radius: 16px;
 }
 
 .offer-raspberry {
@@ -175,6 +216,13 @@ header input {
 
 .product-card {
   background: #FCFCFC;
+  width: 270px;
+  height: 281px;
+  border-radius: 8px;
+}
+
+.product-card-image {
+  border-radius: 50%;
 }
 
 .product-card-link {
@@ -199,11 +247,23 @@ header input {
 .advantages {
   background-image: url(../images/backgrounds/background-waffle.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.advantages-wrapper {
   background: #FCFCFC;
+  width: 1122px;
+  border-radius: 16px;
 }
 
 .news {
   background-image: url(../images/backgrounds/background-blog.jpg);
+  width: 570px;
+  height: 224px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news-name {
@@ -221,7 +281,17 @@ header input {
 .subscription {
   background-image: url(../images/backgrounds/background-subscription.png);
   background-repeat: no-repeat;
-  background: #FCFCFC;
+  width: 570px;
+  height: 224px;
+  border-radius: 16px;
+  background-size: cover;
+}
+
+.subscription-wrapper {
+  background: #FFFFFF;
+  width: 558px;
+  height: 212px;
+  border-radius: 16px;
 }
 
 .subscription input {
@@ -231,6 +301,9 @@ header input {
 .delivery {
   background-image: url(../images/backgrounds/background-delivery.jpg);
   background-repeat: no-repeat;
+  width: 1170px;
+  height: 534px;
+  border-radius: 16px;
 }
 
 .delivery-content-name {
@@ -241,6 +314,9 @@ header input {
 
 .delivery-forms {
   background: #FCFCFC;
+  width: 500px;
+  height: 406px;
+  border-radius: 8px;
 }
 
 .delivery input {
@@ -255,6 +331,16 @@ header input {
 .contacts {
   background-image: url(../images/backgrounds/background-adress.jpg);
   background-repeat: no-repeat;
+  width: 1170px;
+  height: 492px;
+  border-radius: 16px;
+}
+
+.contacts-wrapper {
+  background: #FCFCFC;
+  width: 343px;
+  height: 364px;
+  border-radius: 8px;
 }
 
 .contacts-name {
@@ -321,6 +407,10 @@ header input {
 
 .breadcrumbs-catalog {
   text-decoration: underline;
+}
+
+.catalog-filter-backgroung {
+  background: rgba(252, 252, 252, 0.3);
 }
 
 .catalog-filter-name {
