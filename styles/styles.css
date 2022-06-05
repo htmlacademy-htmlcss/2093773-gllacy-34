@@ -263,7 +263,8 @@ header input {
   height: 224px;
   border-radius: 16px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
+  background-position: center;
 }
 
 .news-name {
@@ -304,6 +305,8 @@ header input {
   width: 1170px;
   height: 534px;
   border-radius: 16px;
+  background-size: cover;
+  background-position: center;
 }
 
 .delivery-content-name {
@@ -334,6 +337,8 @@ header input {
   width: 1170px;
   height: 492px;
   border-radius: 16px;
+  background-size: cover;
+  background-position: center;
 }
 
 .contacts-wrapper {
