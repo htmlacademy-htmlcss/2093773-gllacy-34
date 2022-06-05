@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/inter-400.woff2) format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/inter-700.woff2) format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,20 +18,21 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url(../fonts/inter-900.woff2) format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
-  background: #FEAFC3;
+  background-color: #FEAFC3;
 }
 
 .header-button {
-  background: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
@@ -40,7 +41,7 @@ body {
 
 .button-white {
   font-family: inherit;
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   font-weight: 700;
   color: #2D3440;
   line-height: 20px;
@@ -50,7 +51,7 @@ body {
 
 .button-pink {
   font-family: inherit;
-  background: #FF2F64;
+  background-color: #FF2F64;
   color: #FCFCFC;
   text-decoration: none;
   font-weight: 700;
@@ -59,14 +60,14 @@ body {
 }
 
 .button-catalog-filter {
-  background: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
 }
 
 .product-card-button {
-  background: #FF2F64;
+  background-color: #FF2F64;
 }
 
 .navigation-link {
@@ -77,9 +78,9 @@ body {
 }
 
 .catalog-menu-list {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 135px;
-  height: 188px;
+  min-height: 188px;
   border-radius: 4px;
 }
 
@@ -102,30 +103,30 @@ body {
 }
 
 .popup-search-form {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 356px;
-  height: 96px;
+  min-height: 96px;
   border-radius: 4px;
 }
 
 .popup-entry-form {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 420px;
-  height: 350px;
+  min-height: 350px;
   border-radius: 4px;
 }
 
 .basket-empty {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 288px;
-  height: 156px;
+  min-height: 156px;
   border-radius: 4px;
 }
 
 .basket-full {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 441px;
-  height: 382px;
+  min-height: 382px;
   border-radius: 4px;
 }
 
@@ -170,14 +171,6 @@ header input {
   line-height: 24px;
 }
 
-.slide-second {
-  background: #69A9FF;
-}
-
-.slide-third {
-  background: #FCC850;
-}
-
 .main-headlines {
   font-weight: 900;
   font-size: 32px;
@@ -186,20 +179,20 @@ header input {
 }
 
 .promo-offer {
-  background: #FF7799;
+  background-color: #FF7799;
   width: 570px;
-  height: 268px;
+  min-height: 268px;
   border-radius: 16px;
 }
 
 .offer-raspberry {
-  background-image: url(../images/promo/promo-rasberry.png);
+  background-image: url("../images/promo/promo-raspberry.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .offer-marshmallow {
-  background-image: url(../images/promo/promo-marshmallow.png);
+  background-image: url("../images/promo/promo-marshmallow.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -215,9 +208,9 @@ header input {
 }
 
 .product-card {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 270px;
-  height: 281px;
+  min-height: 281px;
   border-radius: 8px;
 }
 
@@ -245,22 +238,24 @@ header input {
 }
 
 .advantages {
-  background-image: url(../images/backgrounds/background-waffle.png);
+  background-image: url("../images/backgrounds/background-waffle.png");
+  background-color: #FCFCFC;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
 }
 
 .advantages-wrapper {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 1122px;
   border-radius: 16px;
 }
 
 .news {
-  background-image: url(../images/backgrounds/background-blog.jpg);
+  background-image: url("../images/backgrounds/background-blog.jpg");
+  background-color: #FCFCFC;
   width: 570px;
-  height: 224px;
+  min-height: 224px;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -280,18 +275,19 @@ header input {
 }
 
 .subscription {
-  background-image: url(../images/backgrounds/background-subscription.png);
+  background-image: url("../images/backgrounds/background-subscription.png");
+  background-color: #FCFCFC;
   background-repeat: no-repeat;
   width: 570px;
-  height: 224px;
+  min-height: 224px;
   border-radius: 16px;
   background-size: cover;
 }
 
 .subscription-wrapper {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   width: 558px;
-  height: 212px;
+  min-height: 212px;
   border-radius: 16px;
 }
 
@@ -300,10 +296,11 @@ header input {
 }
 
 .delivery {
-  background-image: url(../images/backgrounds/background-delivery.jpg);
+  background-image: url("../images/backgrounds/background-delivery.jpg");
+  background-color: #FCFCFC;
   background-repeat: no-repeat;
   width: 1170px;
-  height: 534px;
+  min-height: 534px;
   border-radius: 16px;
   background-size: cover;
   background-position: center;
@@ -316,9 +313,9 @@ header input {
 }
 
 .delivery-forms {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 500px;
-  height: 406px;
+  min-height: 406px;
   border-radius: 8px;
 }
 
@@ -332,19 +329,20 @@ header input {
 }
 
 .contacts {
-  background-image: url(../images/backgrounds/background-adress.jpg);
+  background-image: url("../images/backgrounds/background-address.jpg");
+  background-color: #FCFCFC;
   background-repeat: no-repeat;
   width: 1170px;
-  height: 492px;
+  min-height: 492px;
   border-radius: 16px;
   background-size: cover;
   background-position: center;
 }
 
 .contacts-wrapper {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   width: 343px;
-  height: 364px;
+  min-height: 364px;
   border-radius: 8px;
 }
 
@@ -377,7 +375,6 @@ header input {
 .link-item {
   color: #2D3440;
   text-decoration: none;
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
@@ -387,7 +384,6 @@ header input {
 }
 
 .footer-copyright-text {
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
@@ -414,8 +410,8 @@ header input {
   text-decoration: underline;
 }
 
-.catalog-filter-backgroung {
-  background: rgba(252, 252, 252, 0.3);
+.catalog-filter-background {
+  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .catalog-filter-name {
@@ -435,5 +431,5 @@ header input {
 }
 
 .pagination-current {
-  background: #FCFCFC;
+  background-color: #FCFCFC;
 }
