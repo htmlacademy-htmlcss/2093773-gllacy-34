@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="page-header">
@@ -53,7 +54,7 @@
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link breadcrumbs-catalog">Каталог</a>
           </li>
         </ul>
         <h1 class="inner-header-name">Сливочное мороженое</h1>
@@ -66,137 +67,142 @@
           action="https://echo.htmlacademy.ru/"
           method="get"
         >
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">по популярности</option>
-            <option value="cheap">по возрастанию цены</option>
-            <option value="expensive">по убыванию цены</option>
+          <label class="catalog-filter-name" for="select">Сортировка:</label>
+          <select class="select-control" aria-label="Сортировка" id="select">
+            <div class="catalog-filter-background">
+              <option value="popular">по популярности</option>
+              <option value="cheap">по возрастанию цены</option>
+              <option value="expensive">по убыванию цены</option>
+            </div>
           </select>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-name">Цена:</legend>
-            <div>диапазон цены</div>
+            <div class="catalog-filter-background">диапазон цены</div>
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-name">Жирность:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="product-group"
-                    value="percent-0"
-                  />
-                  0%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="product-group"
-                    value="percent-until-10"
-                    checked
-                  />
-                  до 10%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="product-group"
-                    value="percent-until-30"
-                  />
-                  до 30%
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="radio"
-                    name="product-group"
-                    value="percent-until-30"
-                  />
-                  выше 30%
-                </label>
-              </li>
-            </ul>
+            <div class="catalog-filter-background">
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="product-group"
+                      value="percent-0"
+                    />
+                    0%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="product-group"
+                      value="percent-until-10"
+                      checked
+                    />
+                    до 10%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="product-group"
+                      value="percent-until-30"
+                    />
+                    до 30%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="product-group"
+                      value="percent-until-30"
+                    />
+                    выше 30%
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-name">Наполнители:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="chocolate"
-                    checked
-                  />
-                  шоколадные
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="sugar-sprinkles"
-                    checked
-                  />
-                  сахарные посыпки
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="fruits"
-                  />
-                  фрукты
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="syrups"
-                  />
-                  сиропы
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input
-                    class="control-input"
-                    type="checkbox"
-                    name="filler"
-                    value="jams"
-                  />
-                  джемы
-                </label>
-              </li>
-            </ul>
+            <div class="catalog-filter-background">
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="chocolate"
+                      checked
+                    />
+                    шоколадные
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="sugar-sprinkles"
+                      checked
+                    />
+                    сахарные посыпки
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="fruits"
+                    />
+                    фрукты
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="syrups"
+                    />
+                    сиропы
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="checkbox"
+                      name="filler"
+                      value="jams"
+                    />
+                    джемы
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <button class="button button-catalog-filter" type="submit">
-            Применить
-          </button>
+          <button class="button-catalog-filter" type="submit">Применить</button>
         </form>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/raspberry.png"
+                src="/images/catalog/raspberry.jpg"
                 width="168"
                 height="168"
                 alt="Шарик ярко-розового мороженого."
@@ -205,13 +211,15 @@
               <p>Сливочное мороженое с малиновым джемом</p>
             </a>
             <span class="product-card-price">310 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/pistachio.png"
+                src="/images/catalog/pistachio.jpg"
                 width="168"
                 height="168"
                 alt="Шарик фисташкового мороженого с шоколадкой крошкой."
@@ -220,13 +228,15 @@
               <p>Фисташковый пломбир с кусочками шоколада</p>
             </a>
             <span class="product-card-price">340 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/blueberry.png"
+                src="/images/catalog/blueberry.jpg"
                 width="168"
                 height="168"
                 alt="Шарик бежевого мороженого с фиолетовыми разводами."
@@ -235,13 +245,15 @@
               <p>Крем-брюле с черничным джемом</p>
             </a>
             <span class="product-card-price">330 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/bubble-gum.png"
+                src="/images/catalog/bubble-gum.jpg"
                 width="168"
                 height="168"
                 alt="Шарик голубого мороженого с радужной посыпкой."
@@ -250,13 +262,15 @@
               <p>Ванильный пломбир со сладкой посыпкой</p>
             </a>
             <span class="product-card-price">320 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/blackberry.png"
+                src="/images/catalog/blackberry.jpg"
                 width="168"
                 height="168"
                 alt="Шарик бледно-розового мороженого с кусочками ягод ежевики."
@@ -265,13 +279,15 @@
               <p>Сливочное мороженое с ежевичным джемом</p>
             </a>
             <span class="product-card-price">330 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span>у</a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/banana.png"
+                src="/images/catalog/banana.jpg"
                 width="168"
                 height="168"
                 alt="Шарик желтого мороженого."
@@ -280,13 +296,15 @@
               <p>Сливочный пломбир с банановым вкусом</p>
             </a>
             <span class="product-card-price">340 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/chocolate.png"
+                src="/images/catalog/chocolate.jpg"
                 width="168"
                 height="168"
                 alt="Шарик шоколадного мороженого."
@@ -295,13 +313,15 @@
               <p>Классический шоколадный пломбир</p>
             </a>
             <span class="product-card-price">270 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/strawberry.png"
+                src="/images/catalog/strawberry.jpg"
                 width="168"
                 height="168"
                 alt="Шарик нежно-розового мороженого."
@@ -310,13 +330,15 @@
               <p>Сливочный пломбир с клубничным вкусом</p>
             </a>
             <span class="product-card-price">300 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/lemon.png"
+                src="/images/catalog/lemon.jpg"
                 width="168"
                 height="168"
                 alt="Шарик ярко-желтого мороженого."
@@ -325,13 +347,15 @@
               <p>Освежающий лимонный сорбет</p>
             </a>
             <span class="product-card-price">310 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/menthol.png"
+                src="/images/catalog/menthol.jpg"
                 width="168"
                 height="168"
                 alt="Шарик нежно-голубого мороженого."
@@ -340,13 +364,15 @@
               <p>Сливочный пломбир с ментоловым сиропом</p>
             </a>
             <span class="product-card-price">320 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/nut.png"
+                src="/images/catalog/nut.jpg"
                 width="168"
                 height="168"
                 alt="Шарик фисташкового мороженого с шоколадным топпингом."
@@ -355,13 +381,15 @@
               <p>Фисташковый пломбир с шоколадным сиропом</p>
             </a>
             <span class="product-card-price">360 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img
                 class="product-card-image"
-                src="/images/catalog/сreme-brulee.png"
+                src="/images/catalog/сreme-brulee.jpg"
                 width="168"
                 height="168"
                 alt="Шарик бежевого мороженого."
@@ -370,17 +398,22 @@
               <p>Классическое крем-брюле</p>
             </a>
             <span class="product-card-price">280 ₽/кг</span>
-            <a class="product-card-button" href="#">Добавить в корзину</a>
+            <a class="product-card-button" href="#"
+              ><span class="visually-hidden">Добавить в корзину</span></a
+            >
           </li>
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
+            <a
+              class="pagination-link pagination-prev pagination-disabled"
+              href="#"
+            >
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link">1</a>
+            <a class="pagination-link" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -400,9 +433,7 @@
             </a>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">
-          Показать еще
-        </button>
+        <button class="button-white" type="button">Показать еще</button>
       </section>
     </main>
 
@@ -432,7 +463,7 @@
       <div class="footer-link">
         <ul class="footer-link-list">
           <li class="footer-link-item">
-            <a class="link-item" href="#">Для поставщиков</a>
+            <a class="link-item suppliers" href="#">Для поставщиков</a>
           </li>
           <li class="footer-link-item">
             <a class="link-item" href="#">О производстве</a>
