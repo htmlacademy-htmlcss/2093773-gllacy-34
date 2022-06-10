@@ -185,6 +185,11 @@ header input {
   line-height: 30px;
 }
 
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -205,6 +210,11 @@ header input {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-offer {
@@ -280,6 +290,24 @@ header input {
   border-radius: 16px;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 505px;
+}
+
+.news-subscription {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
+}
+
 .news {
   background-image: url("../images/backgrounds/background-blog.jpg");
   background-color: #FCFCFC;
@@ -325,6 +353,9 @@ header input {
 }
 
 .delivery {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
   background-image: url("../images/backgrounds/background-delivery.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
@@ -333,6 +364,11 @@ header input {
   border-radius: 16px;
   background-size: cover;
   background-position: center;
+}
+
+.delivery-content {
+  width: 371px;
+  margin-left: 100px;
 }
 
 .delivery-content-name {
@@ -345,6 +381,7 @@ header input {
   background-color: #FCFCFC;
   width: 500px;
   min-height: 406px;
+  margin: 64px;
   border-radius: 8px;
 }
 
@@ -358,6 +395,8 @@ header input {
 }
 
 .contacts {
+  display: flex;
+  justify-content: space-between;
   background-image: url("../images/backgrounds/background-address.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
@@ -372,6 +411,8 @@ header input {
   background-color: #FCFCFC;
   width: 343px;
   min-height: 364px;
+  margin: 64px;
+  margin-right: 763px;
   border-radius: 8px;
 }
 
@@ -401,6 +442,18 @@ header input {
   line-height: 20px;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 105px;
+  margin-left: 4px;
+  margin-right: 299px;
+}
+
 .link-item {
   color: #2D3440;
   text-decoration: none;
@@ -410,6 +463,13 @@ header input {
 
 .suppliers{
   font-weight: 700;
+}
+
+.footer-copyright {
+  max-width: 195px;
+  margin: 48px;
+  margin-right: 14px;
+  margin-left: auto;
 }
 
 .footer-copyright-text {
