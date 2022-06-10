@@ -78,6 +78,23 @@ body {
   background-color: #FF2F64;
 }
 
+.header-links {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 640px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-links-right {
+  max-width: 540px;
+  margin-left: auto;
+}
+
 .navigation-link {
   color: #2D3440;
   line-height: 20px;
