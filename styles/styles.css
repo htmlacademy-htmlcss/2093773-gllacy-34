@@ -499,8 +499,15 @@ header input {
   text-decoration: underline;
 }
 
-.catalog-filter-background {
-  background-color: rgba(252, 252, 252, 0.3);
+.catalog-products {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-filter {
+  width: 825px;
+  margin-left: 98px;
+  margin-right: 445px;
 }
 
 .catalog-filter-name {
