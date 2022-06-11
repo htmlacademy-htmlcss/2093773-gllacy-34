@@ -155,7 +155,6 @@ body {
   border-radius: 4px;
 }
 
-
 header input {
   font-family: inherit;
 }
@@ -192,6 +191,10 @@ header input {
 
 .main-container {
   flex-grow: 1;
+}
+
+.slide {
+  display: flex;
 }
 
 .slide-content-name {
@@ -244,6 +247,11 @@ header input {
 
 .promo-offer-text {
   line-height: 22px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-card {
