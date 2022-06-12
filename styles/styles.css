@@ -22,13 +22,33 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
   background-color: #FEAFC3;
+}
+
+.container {
+  width: 1270px;
+  padding: 0 50px;
+  margin: 0 auto;
 }
 
 .header-button {
@@ -68,6 +88,22 @@ body {
 
 .product-card-button {
   background-color: #FF2F64;
+}
+
+.header-links {
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 640px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-links-right {
+  max-width: 540px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -130,7 +166,6 @@ body {
   border-radius: 4px;
 }
 
-
 header input {
   font-family: inherit;
 }
@@ -160,6 +195,14 @@ header input {
   line-height: 30px;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.slide {
+  display: flex;
+}
+
 .slide-content-name {
   font-weight: 900;
   font-size: 36px;
@@ -176,6 +219,11 @@ header input {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-offer {
@@ -207,9 +255,18 @@ header input {
   line-height: 22px;
 }
 
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .product-card {
   background-color: #FCFCFC;
-  width: 270px;
+  width: 100%;
   min-height: 281px;
   border-radius: 8px;
 }
@@ -237,7 +294,7 @@ header input {
   line-height: 24px;
 }
 
-.advantages {
+.advantages-wrapper {
   background-image: url("../images/backgrounds/background-waffle.png");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
@@ -245,10 +302,28 @@ header input {
   border-radius: 16px;
 }
 
-.advantages-wrapper {
+.advantages-wrapper-white {
   background-color: #FCFCFC;
   width: 1122px;
   border-radius: 16px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 505px;
+}
+
+.news-subscription {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
 }
 
 .news {
@@ -295,15 +370,21 @@ header input {
   font-family: inherit;
 }
 
-.delivery {
+.delivery-wrapper {
+  display: flex;
+  justify-content: space-between;
   background-image: url("../images/backgrounds/background-delivery.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
-  width: 1170px;
   min-height: 534px;
   border-radius: 16px;
   background-size: cover;
   background-position: center;
+}
+
+.delivery-content {
+  width: 371px;
+  margin-left: 100px;
 }
 
 .delivery-content-name {
@@ -316,6 +397,7 @@ header input {
   background-color: #FCFCFC;
   width: 500px;
   min-height: 406px;
+  margin: 64px;
   border-radius: 8px;
 }
 
@@ -328,21 +410,24 @@ header input {
   line-height: 20px;
 }
 
-.contacts {
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
   background-image: url("../images/backgrounds/background-address.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
-  width: 1170px;
   min-height: 492px;
   border-radius: 16px;
   background-size: cover;
   background-position: center;
 }
 
-.contacts-wrapper {
+.contacts-wrapper-white {
   background-color: #FCFCFC;
   width: 343px;
   min-height: 364px;
+  margin: 64px;
+  margin-right: 763px;
   border-radius: 8px;
 }
 
@@ -372,6 +457,17 @@ header input {
   line-height: 20px;
 }
 
+.page-footer {
+  display: flex;
+  margin-top: auto;
+}
+
+.social-list {
+  width: 105px;
+  margin-left: 4px;
+  margin-right: 299px;
+}
+
 .link-item {
   color: #2D3440;
   text-decoration: none;
@@ -381,6 +477,13 @@ header input {
 
 .suppliers{
   font-weight: 700;
+}
+
+.footer-copyright {
+  max-width: 195px;
+  margin: 48px;
+  margin-right: 14px;
+  margin-left: auto;
 }
 
 .footer-copyright-text {
@@ -410,8 +513,14 @@ header input {
   text-decoration: underline;
 }
 
-.catalog-filter-background {
-  background-color: rgba(252, 252, 252, 0.3);
+.catalog-products {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-filter {
+  width: 825px;
+  margin-left: 98px;
 }
 
 .catalog-filter-name {
