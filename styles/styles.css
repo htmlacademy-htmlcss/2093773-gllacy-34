@@ -22,6 +22,12 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -37,6 +43,12 @@ body {
   line-height: 22px;
   color: #2D3440;
   background-color: #FEAFC3;
+}
+
+.container {
+  width: 1270px;
+  padding: 0 50px;
+  margin: 0 auto;
 }
 
 .header-button {
@@ -80,7 +92,6 @@ body {
 
 .header-links {
   display: flex;
-  width: 1170px;
   margin: 0 auto;
 }
 
@@ -184,11 +195,6 @@ header input {
   line-height: 30px;
 }
 
-.page-container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -250,13 +256,17 @@ header input {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .product-card {
   background-color: #FCFCFC;
-  width: 270px;
+  width: 100%;
   min-height: 281px;
   border-radius: 8px;
 }
@@ -284,7 +294,7 @@ header input {
   line-height: 24px;
 }
 
-.advantages {
+.advantages-wrapper {
   background-image: url("../images/backgrounds/background-waffle.png");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
@@ -292,7 +302,7 @@ header input {
   border-radius: 16px;
 }
 
-.advantages-wrapper {
+.advantages-wrapper-white {
   background-color: #FCFCFC;
   width: 1122px;
   border-radius: 16px;
@@ -360,14 +370,12 @@ header input {
   font-family: inherit;
 }
 
-.delivery {
+.delivery-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
   background-image: url("../images/backgrounds/background-delivery.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
-  width: 1170px;
   min-height: 534px;
   border-radius: 16px;
   background-size: cover;
@@ -402,20 +410,19 @@ header input {
   line-height: 20px;
 }
 
-.contacts {
+.contacts-wrapper {
   display: flex;
   justify-content: space-between;
   background-image: url("../images/backgrounds/background-address.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
-  width: 1170px;
   min-height: 492px;
   border-radius: 16px;
   background-size: cover;
   background-position: center;
 }
 
-.contacts-wrapper {
+.contacts-wrapper-white {
   background-color: #FCFCFC;
   width: 343px;
   min-height: 364px;
@@ -450,13 +457,12 @@ header input {
   line-height: 20px;
 }
 
-.page-footer-container {
+.page-footer {
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
+  margin-top: auto;
 }
 
-.footer-social {
+.social-list {
   width: 105px;
   margin-left: 4px;
   margin-right: 299px;
@@ -515,7 +521,6 @@ header input {
 .catalog-filter {
   width: 825px;
   margin-left: 98px;
-  margin-right: 445px;
 }
 
 .catalog-filter-name {
