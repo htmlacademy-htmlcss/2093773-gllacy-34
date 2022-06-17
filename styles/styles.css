@@ -85,27 +85,37 @@ body {
 }
 
 .button-white {
+  display: inline-block;
   font-family: inherit;
   background-color: #FCFCFC;
   font-weight: 700;
   color: #2D3440;
   line-height: 20px;
+  padding: 12px 32px;
+  border-radius: 26px;
   text-align: center;
   text-decoration: none;
 }
 
 .button-pink {
+  display: inline-block;
   font-family: inherit;
   background-color: #FF2F64;
   color: #FCFCFC;
   text-decoration: none;
   font-weight: 700;
   line-height: 20px;
+  padding: 12px 32px;
+  border-radius: 26px;
   text-align: center;
 }
 
 .product-card-button {
+  display: inline-block;
   background-color: #FF2F64;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 26px;
 }
 
 .button-catalog-filter {
@@ -113,10 +123,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-}
-
-.product-card-button {
-  background-color: #FF2F64;
 }
 
 .header-links {
