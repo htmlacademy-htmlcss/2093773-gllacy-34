@@ -93,6 +93,9 @@ body {
   line-height: 20px;
   padding: 12px 32px;
   border-radius: 26px;
+  outline-width: 4px;
+  outline-style: solid;
+  outline-color: rgba(252, 252, 252, 0.4);
   text-align: center;
   text-decoration: none;
 }
@@ -107,6 +110,9 @@ body {
   line-height: 20px;
   padding: 12px 32px;
   border-radius: 26px;
+  outline-width: 4px;
+  outline-style: solid;
+  outline-color: rgba(255, 47, 100, 0.3);
   text-align: center;
 }
 
