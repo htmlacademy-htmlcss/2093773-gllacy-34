@@ -267,14 +267,26 @@ header input {
 }
 
 .slide-content-name {
+  width: 470px;
+  margin-top: 136px;
+  margin-bottom: 24px;
+  margin-left: 70px;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 }
 
 .slide-content-text {
+  width: 414px;
+  margin-bottom: 48px;
+  margin-left: 70px;
   font-size: 18px;
   line-height: 24px;
+}
+
+.slider-button {
+  margin-bottom: 138px;
+  margin-left: 70px;
 }
 
 .main-headlines {
