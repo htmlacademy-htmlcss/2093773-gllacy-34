@@ -294,9 +294,7 @@ header input {
 }
 
 .main-headlines {
-  width: 434px;
   margin: auto;
-  margin-bottom: 55px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -305,6 +303,11 @@ header input {
 
 .promo {
 margin-bottom: 80px;
+}
+
+.promo-headline {
+  width: 434px;
+  margin-bottom: 55px;
 }
 
 .promo-container {
@@ -355,6 +358,15 @@ margin-bottom: 80px;
   align-self: baseline;
 }
 
+.popular {
+  margin-bottom: 80px;
+}
+
+.popular-headline {
+  width: 527px;
+  margin-bottom: 56px;
+}
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -392,6 +404,11 @@ margin-bottom: 80px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.advantages-headline {
+  width: 995px;
+  margin-top: auto 56px;
 }
 
 .advantages-wrapper {
