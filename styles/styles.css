@@ -328,12 +328,16 @@ margin-bottom: 80px;
   background-image: url("../images/promo/promo-raspberry.png");
   background-repeat: no-repeat;
   background-position: right;
+  display: block;
+  align-self: flex-end;
 }
 
 .offer-marshmallow {
   background-image: url("../images/promo/promo-marshmallow.png");
   background-repeat: no-repeat;
   background-position: right;
+  display: block;
+  align-self: flex-end;
 }
 
 .promo-offer-name {
@@ -406,20 +410,20 @@ margin-bottom: 80px;
   line-height: 24px;
 }
 
-.advantages-headline {
-  width: 995px;
-  margin-top: auto 56px;
-}
-
 .advantages-wrapper {
   background-image: url("../images/backgrounds/background-waffle.png");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 16px;
+  margin-bottom: 80px;
+  padding: 24px;
 }
 
 .advantages-wrapper-white {
+  display: flex;
+  flex-direction: column;
   background-color: #FCFCFC;
   width: 1122px;
   margin-left: auto;
@@ -427,68 +431,100 @@ margin-bottom: 80px;
   border-radius: 16px;
 }
 
+.advantages-headline {
+  width: 995px;
+  margin: 56px auto;
+}
+
 .advantages-list {
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.advantages-list:nth-child(3),
+.advantages-list:nth-child(4) {
+  margin-bottom: 56px;
 }
 
 .advantages-item {
   width: 505px;
+  list-style-type: none;
 }
 
 .news-subscription {
   display: flex;
   justify-content: space-between;
-  margin: 80px auto;
+  margin-bottom: 80px;
 }
 
 .news {
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/backgrounds/background-blog.jpg");
   background-color: #FCFCFC;
-  width: 570px;
-  min-height: 224px;
-  border-radius: 16px;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
+  background-size: 120%;
+  background-position: -30px -120px;
+  width: 570px;
+  border-radius: 16px;
 }
 
 .news-name {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 33px;
+  margin-bottom: 12px;
+  margin-left: 32px;
 }
 
 .news-text {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  width: 303px;
+  margin-top: 0;
+  margin-bottom: 67px;
+  margin-left: 32px;
 }
 
 .subscription {
   background-image: url("../images/backgrounds/background-subscription.png");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
-  width: 570px;
-  min-height: 224px;
-  border-radius: 16px;
   background-size: cover;
+  width: 570px;
+  padding: 6px;
+  border-radius: 16px;
 }
 
 .subscription-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
   width: 558px;
   min-height: 212px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   border-radius: 16px;
+}
+
+.subscription-text {
+  width: 506px;
+  margin: 26px;
+  margin-bottom: 42px;
 }
 
 .subscription input {
   font-family: inherit;
+  width: 332px;
+  margin-right: 14px;
+  margin-bottom: 28px;
+  margin-left: 26px;
+  padding: 14px 16px;
 }
 
 .delivery-wrapper {
@@ -497,29 +533,45 @@ margin-bottom: 80px;
   background-image: url("../images/backgrounds/background-delivery.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
-  min-height: 534px;
-  border-radius: 16px;
   background-size: cover;
   background-position: center;
+  border-radius: 16px;
+  margin-bottom: 80px;
 }
 
 .delivery-content {
-  width: 371px;
+  display: flex;
+  flex-direction: column;
   margin-left: 100px;
 }
 
 .delivery-content-name {
+  width: 356px;
+  margin-top: 176px;
+  margin-bottom: 24px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
 }
 
+.delivery-content-text {
+  width: 371px;
+  margin-bottom: 163px;
+}
+
 .delivery-forms {
+  display: flex;
+  flex-direction: column;
   background-color: #FCFCFC;
   width: 500px;
-  min-height: 406px;
   margin: 64px;
   border-radius: 8px;
+}
+
+.delivery-forms-text {
+  width: 380px;
+  margin: 40px;
+  margin-bottom: 32px;
 }
 
 .delivery input {
@@ -529,6 +581,14 @@ margin-bottom: 80px;
 .form-label {
   font-weight: 700;
   line-height: 20px;
+}
+
+.form-button {
+  display: block;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
 }
 
 .contacts-wrapper {
@@ -546,36 +606,60 @@ margin-bottom: 80px;
 .contacts-wrapper-white {
   background-color: #FCFCFC;
   width: 343px;
-  min-height: 364px;
   margin: 64px;
   margin-right: 763px;
   border-radius: 8px;
 }
 
 .contacts-name {
+  width: 179px;
+  margin: 40px;
+  margin-bottom: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
 
 .contacts-address {
+  width: 263px;
+  margin-bottom: 24px;
+  margin-left: 40px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
+.contacts-name {
+  width: 203px;
+  margin-bottom: 12px;
+  margin-left: 40px;
+}
+
 .contacts-phone {
+  display: block;
   color: #2D3440;
   text-decoration: none;
+  width: 225px;
+  margin-bottom: 0;
+  margin-left: 40px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
 .contacts-phone-text {
+  width: 160px;
+  margin-bottom: 32px;
+  margin-left: 40px;
   font-size: 14px;
   line-height: 20px;
+}
+
+.contacts-button {
+  margin-top: 32px;
+  margin-bottom: 42px;
+  margin-left: 40px;
 }
 
 .page-footer {
