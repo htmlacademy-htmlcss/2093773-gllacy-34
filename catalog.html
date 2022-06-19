@@ -49,8 +49,8 @@
       </div>
     </header>
 
-    <main class="main-container main-inner">
-      <header class="inner-header">
+    <main class="main-container main-inner container">
+      <header class="ç">
         <ul class="breadcrumbs-list container">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -59,12 +59,12 @@
             <a class="breadcrumbs-link breadcrumbs-catalog">Каталог</a>
           </li>
         </ul>
-        <h1 class="inner-header-name container">Сливочное мороженое</h1>
+        <h1 class="inner-header-name">Сливочное мороженое</h1>
       </header>
 
-      <section class="catalog-products">
+      <section class="catalog-products container">
         <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
-        <div class="catalog-filter container">
+        <div class="catalog-filter">
           <form
             class="catalog-filter-form"
             action="https://echo.htmlacademy.ru/"
@@ -408,62 +408,68 @@
               >
             </li>
           </ul>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a
-                class="pagination-link pagination-prev pagination-disabled"
-                href="#"
-              >
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
-          <button class="button-white" type="button">Показать еще</button>
+          <div class="pagination-container">
+            <button class="button-white pagination-button" type="button">
+              Показать еще
+            </button>
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a
+                  class="pagination-link pagination-prev pagination-disabled"
+                  href="#"
+                >
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer container">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Vkontakte</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a
-            class="social-button"
-            href="https://www.youtube.com/user/htmlacademyru"
-          >
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
+      <div class="social-footer">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-button"
+              href="https://www.youtube.com/user/htmlacademyru"
+            >
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <ul class="footer-link-list">
         <li class="footer-link-item">
           <a class="link-item suppliers" href="#">Для поставщиков</a>

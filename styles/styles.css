@@ -753,12 +753,25 @@ margin-bottom: 80px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  margin-top: 32px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  padding-right: 28px;
   color: #2D3440;
   text-decoration: none;
 }
@@ -770,11 +783,11 @@ margin-bottom: 80px;
 .catalog-products {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .catalog-filter {
   width: 825px;
-  margin-left: 98px;
 }
 
 .catalog-filter-name {
@@ -786,6 +799,30 @@ margin-bottom: 80px;
   line-height: 20px;
 }
 
+.pagination-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 126px;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.pagination {
+  display: flex;
+  width: 168px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.pagination-item {
+  padding: 2px 7px;
+  list-style-type: none;
+}
+
 .pagination-link {
   color: #2D3440;
   text-decoration: none;
@@ -795,4 +832,9 @@ margin-bottom: 80px;
 
 .pagination-current {
   background-color: #FCFCFC;
+  border-radius: 76px;
+}
+
+.pagination-button {
+  margin-left: 484px;
 }
