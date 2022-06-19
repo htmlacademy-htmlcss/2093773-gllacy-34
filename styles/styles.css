@@ -283,6 +283,7 @@ header input {
 .slide-content-text {
   width: 414px;
   margin-bottom: 48px;
+  margin-top: 0;
   margin-left: 70px;
   font-size: 18px;
   line-height: 24px;
@@ -350,6 +351,7 @@ margin-bottom: 80px;
 }
 
 .promo-offer-text {
+  margin-top: 0;
   margin-bottom: 28px;
   margin-left: 36px;
   width: 328px;
@@ -428,12 +430,13 @@ margin-bottom: 80px;
   width: 1122px;
   margin-left: auto;
   margin-right: auto;
+  padding: 56px 40px;
   border-radius: 16px;
 }
 
 .advantages-headline {
   width: 995px;
-  margin: 56px auto;
+  margin-bottom: 56px;
 }
 
 .advantages-list {
@@ -441,18 +444,22 @@ margin-bottom: 80px;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
-}
-
-.advantages-list:nth-child(3),
-.advantages-list:nth-child(4) {
-  margin-bottom: 56px;
 }
 
 .advantages-item {
   width: 505px;
   list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.advantages-item p {
+  margin: 0;
+}
+
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .news-subscription {
@@ -556,6 +563,7 @@ margin-bottom: 80px;
 
 .delivery-content-text {
   width: 371px;
+  margin-top: 0;
   margin-bottom: 163px;
 }
 
@@ -565,12 +573,14 @@ margin-bottom: 80px;
   background-color: #FCFCFC;
   width: 500px;
   margin: 64px;
+  padding: 40px;
+  padding-bottom: 42px;
   border-radius: 8px;
 }
 
 .delivery-forms-text {
   width: 380px;
-  margin: 40px;
+  margin-top: 0;
   margin-bottom: 32px;
 }
 
@@ -588,7 +598,6 @@ margin-bottom: 80px;
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 42px;
 }
 
 .contacts-wrapper {
@@ -608,22 +617,29 @@ margin-bottom: 80px;
   width: 343px;
   margin: 64px;
   margin-right: 763px;
+  padding: 40px;
+  padding-bottom: 42px;
   border-radius: 8px;
 }
 
 .contacts-name {
   width: 179px;
-  margin: 40px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
 
+.contacts-address p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
 .contacts-address {
   width: 263px;
-  margin-bottom: 24px;
-  margin-left: 40px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -633,7 +649,6 @@ margin-bottom: 80px;
 .contacts-name {
   width: 203px;
   margin-bottom: 12px;
-  margin-left: 40px;
 }
 
 .contacts-phone {
@@ -642,7 +657,7 @@ margin-bottom: 80px;
   text-decoration: none;
   width: 225px;
   margin-bottom: 0;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -651,15 +666,15 @@ margin-bottom: 80px;
 .contacts-phone-text {
   width: 160px;
   margin-bottom: 32px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   font-size: 14px;
   line-height: 20px;
 }
 
 .contacts-button {
   margin-top: 32px;
-  margin-bottom: 42px;
-  margin-left: 40px;
+  /* margin-bottom: 42px;
+  margin-left: 40px; */
 }
 
 .page-footer {
