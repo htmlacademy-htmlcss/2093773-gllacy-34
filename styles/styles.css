@@ -303,7 +303,7 @@ header input {
 }
 
 .promo {
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .promo-headline {
@@ -744,7 +744,7 @@ margin-bottom: 80px;
   line-height: 20px;
 }
 
-.suppliers{
+.suppliers {
   font-weight: 700;
 }
 
@@ -809,6 +809,7 @@ margin-bottom: 80px;
   font-size: 14px;
   line-height: 20px;
 }
+
 .control {
   font-size: 14px;
   line-height: 20px;
