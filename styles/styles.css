@@ -622,8 +622,34 @@ header input {
   margin: 0 0 32px 0;
 }
 
-.delivery input {
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-form-address {
+  grid-column: 1/-1;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-date,
+.delivery-form-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form .form-label {
+  margin-bottom: 8px;
+}
+
+.delivery-form input {
   font-family: inherit;
+  padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
 }
 
 .form-label {
@@ -632,10 +658,8 @@ header input {
 }
 
 .form-button {
-  display: block;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  grid-column: 1/-1;
+  justify-self: center;
 }
 
 .contacts-wrapper {
