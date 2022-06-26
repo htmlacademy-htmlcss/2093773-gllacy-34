@@ -414,12 +414,14 @@ header input {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 91px 30px;
-  margin: 0;
+  margin: 0 0 16px 0;
   padding: 0;
   list-style: none;
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
   background-color: #FCFCFC;
   width: 100%;
   min-height: 281px;
@@ -427,15 +429,24 @@ header input {
   border-radius: 8px;
 }
 
+.price-buy {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-card-image {
   border-radius: 50%;
-  margin: -25% 0 0 0;
+  margin: -25% 0 16px 0;
 }
 
 .product-card-link {
   color: #2D3440;
   text-decoration: none;
   text-align: center;
+}
+
+.product-card-link p {
+  margin: 0 0 16px 0;
 }
 
 .product-card-name {
@@ -448,7 +459,6 @@ header input {
 }
 
 .product-card-text {
-  margin: 0 0 16px 0;
   padding: 0;
   color: #565C66;
 }
@@ -877,7 +887,7 @@ header input {
   align-items: center;
   width: 100%;
   min-height: 126px;
-  margin: 16px 0 40px 0;
+  margin-bottom: 40px;
   padding: 0;
 }
 
