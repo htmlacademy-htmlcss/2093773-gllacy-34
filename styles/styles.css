@@ -450,6 +450,7 @@ header input {
 .product-card-text {
   margin: 0 0 16px 0;
   padding: 0;
+  color: #565C66;
 }
 
 .product-card-price {
@@ -508,6 +509,10 @@ header input {
   margin-bottom: 0;
 }
 
+.advantages-item-text {
+  color: #565C66;
+}
+
 .news-subscription {
   display: flex;
   justify-content: space-between;
@@ -533,6 +538,7 @@ header input {
   line-height: 20px;
   width: 303px;
   margin: 0 0 12px 0;
+  color: #565C66;
 }
 
 .news-text {
@@ -567,6 +573,7 @@ header input {
 .subscription-text {
   width: 506px;
   margin: 0 0 42px 0;
+  color: #565C66;
 }
 
 .subscription input {
@@ -574,6 +581,8 @@ header input {
   width: 332px;
   margin: 0 14px 0 0;
   padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
 }
 
 .delivery-wrapper {
@@ -591,7 +600,7 @@ header input {
 .delivery-content {
   display: flex;
   flex-direction: column;
-  margin: 167px 135px 163px 100px;
+  margin: 167px 0 163px 100px;
 }
 
 .delivery-content-name {
@@ -605,6 +614,7 @@ header input {
 .delivery-content-text {
   width: 371px;
   margin: 0;
+  color: #565C66;
 }
 
 .delivery-forms {
@@ -620,6 +630,7 @@ header input {
 .delivery-forms-text {
   width: 380px;
   margin: 0 0 32px 0;
+  color: #565C66;
 }
 
 .delivery-form {
@@ -690,6 +701,7 @@ header input {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: #565C66;
 }
 
 .contacts-address p {
@@ -726,6 +738,7 @@ header input {
   margin: 0 0 32px 0;
   font-size: 14px;
   line-height: 20px;
+  color: #565C66;
 }
 
 .contacts-button {
