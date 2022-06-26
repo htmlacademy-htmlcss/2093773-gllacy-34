@@ -414,12 +414,14 @@ header input {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 91px 30px;
-  margin: 0;
+  margin: 0 0 16px 0;
   padding: 0;
   list-style: none;
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
   background-color: #FCFCFC;
   width: 100%;
   min-height: 281px;
@@ -427,15 +429,24 @@ header input {
   border-radius: 8px;
 }
 
+.price-buy {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-card-image {
   border-radius: 50%;
-  margin: -25% 0 0 0;
+  margin: -25% 0 16px 0;
 }
 
 .product-card-link {
   color: #2D3440;
   text-decoration: none;
   text-align: center;
+}
+
+.product-card-link p {
+  margin: 0 0 16px 0;
 }
 
 .product-card-name {
@@ -448,8 +459,8 @@ header input {
 }
 
 .product-card-text {
-  margin: 0 0 16px 0;
   padding: 0;
+  color: #565C66;
 }
 
 .product-card-price {
@@ -508,6 +519,10 @@ header input {
   margin-bottom: 0;
 }
 
+.advantages-item-text {
+  color: #565C66;
+}
+
 .news-subscription {
   display: flex;
   justify-content: space-between;
@@ -533,6 +548,7 @@ header input {
   line-height: 20px;
   width: 303px;
   margin: 0 0 12px 0;
+  color: #565C66;
 }
 
 .news-text {
@@ -567,6 +583,7 @@ header input {
 .subscription-text {
   width: 506px;
   margin: 0 0 42px 0;
+  color: #565C66;
 }
 
 .subscription input {
@@ -574,6 +591,8 @@ header input {
   width: 332px;
   margin: 0 14px 0 0;
   padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
 }
 
 .delivery-wrapper {
@@ -591,7 +610,7 @@ header input {
 .delivery-content {
   display: flex;
   flex-direction: column;
-  margin: 167px 135px 163px 100px;
+  margin: 167px 0 163px 100px;
 }
 
 .delivery-content-name {
@@ -605,6 +624,7 @@ header input {
 .delivery-content-text {
   width: 371px;
   margin: 0;
+  color: #565C66;
 }
 
 .delivery-forms {
@@ -620,10 +640,37 @@ header input {
 .delivery-forms-text {
   width: 380px;
   margin: 0 0 32px 0;
+  color: #565C66;
 }
 
-.delivery input {
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-form-address {
+  grid-column: 1/-1;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-date,
+.delivery-form-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form .form-label {
+  margin-bottom: 8px;
+}
+
+.delivery-form input {
   font-family: inherit;
+  padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
 }
 
 .form-label {
@@ -632,10 +679,8 @@ header input {
 }
 
 .form-button {
-  display: block;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  grid-column: 1/-1;
+  justify-self: center;
 }
 
 .contacts-wrapper {
@@ -666,6 +711,7 @@ header input {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: #565C66;
 }
 
 .contacts-address p {
@@ -702,6 +748,7 @@ header input {
   margin: 0 0 32px 0;
   font-size: 14px;
   line-height: 20px;
+  color: #565C66;
 }
 
 .contacts-button {
@@ -840,7 +887,7 @@ header input {
   align-items: center;
   width: 100%;
   min-height: 126px;
-  margin: 16px 0 40px 0;
+  margin-bottom: 40px;
   padding: 0;
 }
 
