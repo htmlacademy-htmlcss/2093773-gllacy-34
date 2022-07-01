@@ -97,6 +97,7 @@ body {
   outline: 4px solid rgba(252, 252, 252, 0.4);
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button-pink {
@@ -112,6 +113,7 @@ body {
   border: none;
   outline: 4px solid rgba(255, 47, 100, 0.3);
   text-align: center;
+  cursor: pointer;
 }
 
 .product-card-button {
@@ -120,6 +122,7 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 26px;
+  cursor: pointer;
 }
 
 .button-catalog-filter {
@@ -127,6 +130,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .slider-control-button {
@@ -135,6 +139,7 @@ body {
   border-radius: 50%;
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
+  cursor: pointer;
 }
 
 .slider-pagination-button {
@@ -189,6 +194,7 @@ body {
   color: #2D3440;
   line-height: 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .catalog-menu-list {
@@ -432,6 +438,7 @@ header input {
 .price-buy {
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .product-card-image {
@@ -773,7 +780,7 @@ header input {
   margin: 48px 299px 81px 4px;
 }
 
-.social-item {
+.social-button {
   background-color: #FCFCFC;
   border-radius: 24px;
   margin: 0 16px 0 0;
