@@ -1037,6 +1037,21 @@ header input {
   height: 24px;
 }
 
+.social-button:hover {
+  background-color: #2D3440;
+}
+
+.social-button:active {
+  background-color: #2D3440;
+  opacity: 0.5;
+}
+
+.social-button:focus {
+  background-color: #2D3440;
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
 .social-button-tg {
   background-image: url("/images/social/telegram.svg");
 }
