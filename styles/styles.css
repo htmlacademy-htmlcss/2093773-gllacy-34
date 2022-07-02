@@ -227,6 +227,23 @@ body {
   cursor: pointer;
 }
 
+.navigation-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.navigation-link:active {
+  background-color: #FCFCFC;
+  border-radius: 30px;
+}
+
+.navigation-link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
