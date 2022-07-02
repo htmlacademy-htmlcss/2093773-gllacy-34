@@ -95,6 +95,31 @@ body {
   margin: auto 0;
 }
 
+.header-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.header-button:active {
+  background-color: #FCFCFC;
+}
+
+.header-button:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: inset 0 0 0 2px #2D3440;
+  outline: none;
+}
+
+.header-button-current {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+
+.header-button-current:hover,
+.header-button-current:active,
+.header-button-current:focus {
+  color: #2D3440;
+}
+
 .button-white {
   display: inline-block;
   font-family: inherit;
@@ -240,8 +265,20 @@ body {
 .navigation-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
-  border: 2px solid #2D3440;
+  box-shadow: inset 0 0 0 2px #2D3440;
   outline: none;
+}
+
+.navigation-link-current {
+  background-color: #FF4A78;
+  border-radius: 30px;
+  color: #FCFCFC;
+}
+
+.navigation-link-current:hover,
+.navigation-link-current:active,
+.navigation-link-current:focus {
+  color:#2D3440;
 }
 
 .navigation-icon {
@@ -251,7 +288,6 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #000000;
 }
 
 .catalog-menu-list {
@@ -1037,7 +1073,8 @@ header input {
 
 .pagination-current {
   background-color: #FCFCFC;
-  border-radius: 76px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
 }
 
 .pagination-button {
