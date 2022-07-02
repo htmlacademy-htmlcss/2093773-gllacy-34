@@ -131,9 +131,44 @@ body {
   border-radius: 26px;
   border: 4px solid rgba(252, 252, 252, 0.4);
   background-clip: padding-box;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+}
+
+.button-white:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  border: 4px solid #FCFCFC;
+  box-shadow: 0 4px 15px 0 rgba(133, 133, 133, 0.15);
+}
+
+.button-white:active {
+  background-color: #FCFCFC;
+  border: 4px solid #FCFCFC;
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.button-white:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 4px solid rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.button-white:disabled {
+  background-color: #E7E7E7;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  color: #B9B9B9;
+  box-shadow: none;
+}
+
+.button-white-loading {
+  background-image: url("/images/icons/spinner-for-white.svg");
+  background-repeat: no-repeat;
+  padding-right: 56px;
+  background-size: 16px 16px;
+  background-position: top 14px right 32px;
+  transform: rotate(360deg);
 }
 
 .button-pink {
