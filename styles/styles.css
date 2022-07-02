@@ -153,6 +153,7 @@ body {
   background-color: rgba(252, 252, 252, 0.5);
   border: 4px solid rgba(252, 252, 252, 0.5);
   box-shadow: 0 0 0 2px #2D3440;
+  outline: none;
 }
 
 .button-white:disabled {
@@ -206,6 +207,7 @@ body {
   background-color: #FF2F64;
   border: 4px solid #FF2F64;
   box-shadow: 0 0 0 2px #2D3440;
+  outline: none;
 }
 
 .button-pink:disabled {
@@ -288,7 +290,7 @@ body {
 }
 
 .button-catalog-filter:disabled {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .slider-control-button {
@@ -297,7 +299,30 @@ body {
   border-radius: 50%;
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
+  color: #FCFCFC;
   cursor: pointer;
+}
+
+.slider-control-button:hover {
+  background-color: #FCFCFC;
+  color: #2D3440;
+}
+
+.slider-control-button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: none;
+  color: #2D3440;
+}
+
+.slider-control-button:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2D3440;
+  outline: none;
+  color: #2D3440;
+}
+
+.slider-control-button:disabled {
+ opacity: 0.4;
 }
 
 .slider-prev {
@@ -315,7 +340,6 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #FCFCFC;
 }
 
 .slider-pagination-button {
