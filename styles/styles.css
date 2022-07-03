@@ -337,7 +337,7 @@ body {
 .slider-next {
   position: absolute;
   top: 258px;
-  left: 542px;
+  right: 278px;
 }
 
 .slider-icon {
@@ -563,9 +563,10 @@ header input {
   margin-bottom: 80px;
 }
 
-/* .slider-slides {
-  display: flex;
-} */
+.slider-slides {
+  position: relative;
+  /* display: flex; */
+}
 
 .slide {
   display: flex;
