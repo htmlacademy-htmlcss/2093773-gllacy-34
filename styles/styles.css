@@ -822,8 +822,8 @@ header input {
   background-image: url("../images/backgrounds/background-blog.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
-  background-size: 120%;
-  background-position: -30px -120px;
+  background-size: 115%;
+  background-position: -8px -107px;
   width: 570px;
   padding: 33px 32px 67px 32px;
   border-radius: 16px;
@@ -875,6 +875,8 @@ header input {
 
 .subscription input {
   font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
   width: 332px;
   margin: 0 14px 0 0;
   padding: 14px 16px;
@@ -888,8 +890,6 @@ header input {
   background-image: url("../images/backgrounds/background-delivery.jpg");
   background-color: #FCFCFC;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   border-radius: 16px;
   margin-bottom: 80px;
 }
@@ -933,7 +933,7 @@ header input {
 .delivery-form {
   display: grid;
   grid-template-columns: 117px 287px;
-  gap: 21px 16px;
+  gap: 19px 16px;
 }
 
 .delivery-form-address {
@@ -955,7 +955,9 @@ header input {
 
 .delivery-form input {
   font-family: inherit;
-  padding: 14px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 13px 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
 }
@@ -979,6 +981,7 @@ header input {
   border-radius: 16px;
   background-size: cover;
   background-position: center;
+  margin-bottom: -4px;
 }
 
 .contacts-wrapper-white {
@@ -1103,27 +1106,16 @@ header input {
 
 .footer-link-list {
   display: grid;
-  margin: 0;
+  margin: -8px 0 0 0;
   padding: 0;
   list-style-type: none;
+  grid-template-columns: auto auto;
+  gap: 6px 0;
+  align-content: center;
 }
-
-/* .footer-link-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 356px;
-  margin: 48px 0 57px 0;
-  padding: 0;
-  list-style-type: none;
-} */
 
 .footer-link-item:first-child {
   order: -2;
-  margin: 0 24px 8px 0;
-}
-
-.footer-link-item:nth-child(2) {
-  margin-right: 38px;
 }
 
 .footer-link-item:nth-child(3) {
@@ -1135,14 +1127,13 @@ header input {
   text-decoration: none;
   font-size: 14px;
   line-height: 20px;
+  padding-left: 24px;
 }
 
 .suppliers {
   font-weight: 700;
   background-image: url("/images/icons/heart-fill.svg");
   background-repeat: no-repeat;
-  padding-left: 24px;
-  margin-left: -24px;
 }
 
 .footer-copyright {
@@ -1154,6 +1145,7 @@ header input {
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+  padding-top: 10px;
 }
 
 .footer-copyright-link {
