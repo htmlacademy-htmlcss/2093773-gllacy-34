@@ -20,7 +20,12 @@
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+                <a
+                  class="navigation-link navigation-link-current"
+                  href="catalog.html"
+                >
+                  Каталог
+                </a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -92,15 +97,15 @@
             </svg>
             <span class="visually-hidden">Корзина</span>Пусто
           </a>
-          <!--Попап корзины <div class="basket-full">
+          <div class="basket-full">
             <h3 class="basket-full-name">Корзина</h3>
-          </div> -->
+          </div>
         </div>
       </div>
     </header>
 
-    <main class="main-container main-inner container">
-      <header class="ç">
+    <main class="main-container">
+      <header class="container">
         <ul class="breadcrumbs-list container">
           <li class="breadcrumbs-item breadcrumbs-item-main">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -120,12 +125,20 @@
             action="https://echo.htmlacademy.ru/"
             method="get"
           >
-            <label class="catalog-filter-name" for="select">Сортировка:</label>
-            <select class="select-control" aria-label="Сортировка" id="select">
-              <option value="popular">по популярности</option>
-              <option value="cheap">по возрастанию цены</option>
-              <option value="expensive">по убыванию цены</option>
-            </select>
+            <div class="sorting">
+              <label class="catalog-filter-name" for="select"
+                >Сортировка:</label
+              >
+              <select
+                class="select-control"
+                aria-label="Сортировка"
+                id="select"
+              >
+                <option value="popular">по популярности</option>
+                <option value="cheap">по возрастанию цены</option>
+                <option value="expensive">по убыванию цены</option>
+              </select>
+            </div>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-name">Цена:</legend>
               <div class="catalog-filter-background">диапазон цены</div>
@@ -694,63 +707,61 @@
             <button class="button-white pagination-button" type="button">
               Показать еще
             </button>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a
-                  class="pagination-link pagination-prev pagination-disabled"
-                  href="#"
+            <div class="pagination-switch">
+              <a
+                class="pagination-arrow pagination-prev pagination-disabled"
+                href="#"
+              >
+                <svg
+                  class="paginatio-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    class="paginatio-icon"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.8 3.8a.67.67 0 0 0-.94-.94L4.2 7.53a.66.66 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
-                    />
-                  </svg>
-                  <span class="visually-hidden">Предыдущая страница</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">5</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-next" href="#">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
-                    />
-                  </svg>
-                  <span class="visually-hidden">Следующая страница</span>
-                </a>
-              </li>
-            </ul>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.8 3.8a.67.67 0 0 0-.94-.94L4.2 7.53a.66.66 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
+                  />
+                </svg>
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">5</a>
+                </li>
+              </ul>
+              <a class="pagination-arrow pagination-next" href="#">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                  />
+                </svg>
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
