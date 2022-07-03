@@ -351,6 +351,7 @@ body {
 
 .slider-pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -383,10 +384,6 @@ body {
 .slider-pagination-button:focus {
   box-shadow: inset 0 0 0 1px #2D3440;
   outline: none;
-}
-
-.slider-pagination-button:last-child {
-  margin: 0;
 }
 
 .header-links {
@@ -639,6 +636,7 @@ header input {
 }
 
 .slide-img {
+  display: block;
   position: absolute;
   top: 21px;
   left: 561px;
