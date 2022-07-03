@@ -1332,6 +1332,7 @@ header input {
   min-height: 126px;
   margin-bottom: 40px;
   padding: 0;
+  position: relative;
 }
 
 .pagination-switch {
@@ -1405,6 +1406,16 @@ header input {
 .pagination-next {
   position: absolute;
   right: 16px;
+}
+
+.pagination-container::after {
+  content: "";
+  position: absolute;
+  top: 166px;
+  left: 0;
+  right: 0;
+  height: 0;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
 
 
