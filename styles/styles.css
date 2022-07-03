@@ -1345,7 +1345,7 @@ header input {
 .pagination {
   display: flex;
   width: 120px;
-  margin: 0;
+  margin: 0 24px 0 24px;
   padding: 0;
 }
 
@@ -1397,5 +1397,14 @@ header input {
   margin: 0 0 0 484px;
 }
 
+.pagination-prev {
+  position: absolute;
+  left: 0;
+}
+
+.pagination-next {
+  position: absolute;
+  right: 16px;
+}
 
 
