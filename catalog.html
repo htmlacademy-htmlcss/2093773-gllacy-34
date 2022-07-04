@@ -125,10 +125,10 @@
             action="https://echo.htmlacademy.ru/"
             method="get"
           >
-            <div class="sorting">
-              <label class="catalog-filter-name" for="select"
-                >Сортировка:</label
-              >
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-name" for="select">
+                Сортировка:
+              </legend>
               <select
                 class="select-control"
                 aria-label="Сортировка"
@@ -138,7 +138,7 @@
                 <option value="cheap">по возрастанию цены</option>
                 <option value="expensive">по убыванию цены</option>
               </select>
-            </div>
+            </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-name">Цена:</legend>
               <div>диапозон цен</div>
@@ -146,7 +146,7 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-name">Жирность:</legend>
               <div>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list filter-fat">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
