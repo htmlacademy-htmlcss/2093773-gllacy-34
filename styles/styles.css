@@ -1380,6 +1380,86 @@ body {
   padding: 8px 24px;
 }
 
+.range-price {
+  display: flex;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range {
+  padding: 16px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+}
+
+.range-scale {
+  position: relative;
+  width: 164px;
+  height: 2px;
+  background-color: rgb(86, 92, 102, 0.3);
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #565C66;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -7px;
+  width: 16px;
+  height: 16px;
+  background-color: #FCFCFC;
+  border: none;
+  box-shadow: inset 0 0 0 6px #2D3440;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #2D3440;
+  box-shadow: inset 0 0 0 6px #FCFCFC;
+}
+
+.range-toggle:active {
+  background-color: #2D3440;
+  box-shadow: inset 0 0 0 6px #2D3440;
+}
+
+.range-toggle:focus {
+  background-color: #2D3440;
+  box-shadow: inset 0 0 0 4px #FCFCFC;
+  border: 2px solid #2D3440;
+}
+
+.toggle-min {
+  left: -10px;
+}
+
+.toggle-max {
+  right: -15px;
+}
+
 .catalog-products {
   display: flex;
   flex-direction: column;

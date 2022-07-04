@@ -140,8 +140,44 @@
               </select>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-name">Цена:</legend>
-              <div>диапозон цен</div>
+              <div class="range-price">
+                <legend class="catalog-filter-name">Цена:</legend>
+                <label class="catalog-filter-label">
+                  <input
+                    class="range-input"
+                    type="number"
+                    value="100"
+                    name="min-price"
+                  />
+                  ₽
+                </label> -
+                <label class="catalog-filter-label">
+                  <input
+                    class="range-input"
+                    type="number"
+                    value="500"
+                    name="max-price"
+                    style="width: 37px"
+                  />
+                  ₽
+                </label>
+              </div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 40px; width: 56px">
+                    <button type="button" class="range-toggle toggle-min">
+                      <span class="visually-hidden"
+                        >Изменить минимальную цену.</span
+                      >
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+                      <span class="visually-hidden"
+                        >Изменить максимальную цену.</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-name">Жирность:</legend>
