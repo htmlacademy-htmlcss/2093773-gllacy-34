@@ -1326,6 +1326,20 @@ body {
 
 .catalog-filter-form {
   display: flex;
+  flex-wrap: wrap;
+  width: 823px;
+  align-items: flex-end;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-list {
