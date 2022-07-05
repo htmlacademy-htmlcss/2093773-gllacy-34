@@ -1454,6 +1454,37 @@ body {
   right: -15px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding: 0 16px 0 24px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2D3440;
+}
+
+.control-mark-radio {
+  border-radius: 50%;
+}
+
+.control-mark-checkbox {
+  border-radius: 2px;
+}
+
+.control:hover .control-mark {
+  border-color: #FCFCFC;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 50%;
+}
+
 .catalog-products {
   display: flex;
   flex-direction: column;
