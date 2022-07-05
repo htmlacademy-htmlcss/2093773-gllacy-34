@@ -22,31 +22,31 @@
             <ul class="navigation-list">
               <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Каталог</a>
+                <ul class="popover catalog-menu-list">
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link catalog-new-link" href="#">
+                      Новинки
+                    </a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Доставка и оплата</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">О компании</a>
-              </li>
-            </ul>
-            <ul class="catalog-menu-list">
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link catalog-new-link" href="#">
-                  Новинки
-                </a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Сливочное</a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Щербеты</a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Мелорин</a>
               </li>
             </ul>
           </nav>
@@ -74,13 +74,16 @@
             </svg>
             <span class="visually-hidden">Поиск</span>
           </a>
-          <div class="popup-search-form">
+          <div class="popover popover-search-form">
+            <label for="search" class="visually-hidden"
+            >Поиск по сайту</label
+          >
             <input
               class="field"
               type="search"
               id="search"
               name="search"
-              placeholder="Поиск по сайту"
+              placeholder="| Поиск по сайту"
             />
           </div>
           <a class="header-button header-button-svg" href="#">
@@ -102,28 +105,38 @@
             </svg>
             Вход</a
           >
-          <div class="popup-entry-form">
+          <div class="popover popover-entry-form">
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <h3 class="popup-entry-name">Личный кабинет</h3>
+              <h3 class="popover-title popover-entry-name">Личный кабинет</h3>
+              <label for="login-name" class="visually-hidden"
+                >Адрес электронной почты</label
+              >
               <input
                 class="field"
                 type="email"
                 id="login-name"
                 name="login-name"
                 placeholder="email@example.com"
+                value="email@example.com"
+                required
               />
+              <label for="login-password" class="visually-hidden">Пароль</label>
               <input
                 class="field"
                 type="password"
                 id="login-password"
                 name="login-password"
-                placeholder="******"
+                placeholder="password"
+                value="123456"
+                required
               />
-              <button type="submit">Войти</button>
             </form>
-            <div class="popup-entry-link">
-              <a class="entry-link" href="#">Забыли пароль?</a>
-              <a class="entry-link" href="#">Регистрация</a>
+            <div class="popover-entry-footer">
+              <button type="submit" class="button-pink">Войти</button>
+              <div class="popover-entry-links">
+                <a class="entry-link" href="#">Забыли пароль?</a>
+                <a class="entry-link" href="#">Регистрация</a>
+              </div>
             </div>
           </div>
           <a
@@ -148,12 +161,52 @@
             </svg>
             <span class="visually-hidden">Корзина</span>2 товара
           </a>
-          <div class="popup-basket">
-            <div class="basket-empty">
-              <h3 class="basket-empty-name">Ваша корзина пока пуста</h3>
+          <div class="popover-basket">
+            <div class="popover basket-empty">
+              <h3 class="popover-title basket-empty-name">
+                Ваша корзина пока пуста
+              </h3>
             </div>
-            <div class="basket-full">
-              <h3 class="basket-full-name">Корзина</h3>
+            <div class="popover basket-full">
+              <h3 class="popover-title">Корзина</h3>
+              <ul class="basket-product-list">
+                <li class="basket-product-item">
+                  <img
+                    class="basket-product-image"
+                    src="/images/catalog/raspberry.jpg"
+                    width="46px"
+                    height="46px"
+                    alt="Шарик ярко-розового мороженого."
+                  />
+                  <span class="basket-product-name">Малинка</span>
+                  <span class="basket-product-about">1 кг х 310 ₽</span>
+                  <span class="basket-product-price">310 ₽</span>
+                  <button class="basket-product-button">
+                    <span class="visually-hidden">Удалить</span>
+                  </button>
+                </li>
+                <li class="basket-product-item">
+                  <img
+                    class="basket-product-image"
+                    src="/images/catalog/bubble-gum.jpg"
+                    width="46px"
+                    height="46px"
+                    alt="Шарик голубого мороженого с радужной посыпкой."
+                  />
+                  <span class="basket-product-name">Бабл-гам</span>
+                  <span class="basket-product-about">1,5 кг х 320 ₽</span>
+                  <span class="basket-product-price">480 ₽</span>
+                  <button class="basket-product-button">
+                    <span class="visually-hidden">Удалить</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="basket-order">
+                <button type="submit" class="button-pink">
+                  Оформить заказ
+                </button>
+                <span class="basket-total">Итого: 790 ₽</span>
+              </div>
             </div>
           </div>
         </div>
@@ -219,14 +272,14 @@
               </p>
               <a class="button-white slider-button" href="#">Заказать</a>
             </div>
-           <div class="slide-img">
+            <div class="slide-img">
               <img
                 src="/images/slides/ice-cream-slide-third.png"
                 width="312"
                 height="507"
                 alt="Мороженое карамельный пломбир с маршмеллоу."
               />
-           </div>
+            </div>
           </div>
           <div class="slider-control">
             <button class="slider-control-button slider-prev" type="button">
