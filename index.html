@@ -55,113 +55,117 @@
           <a class="header-phone-link" href="tel:+78005558628">
             +7 800 555-86-28
           </a>
-          <a class="header-button" href="#">
-            <svg
-              class="navigation-icon"
-              aria-hidden="true"
-              focusable="false"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
-              />
-            </svg>
-            <span class="visually-hidden">Поиск</span>
-          </a>
-          <div class="popover popover-search-form">
-            <label for="search" class="visually-hidden"
-            >Поиск по сайту</label
-          >
-            <input
-              class="field"
-              type="search"
-              id="search"
-              name="search"
-              placeholder="| Поиск по сайту"
-            />
-          </div>
-          <a class="header-button header-button-svg" href="#">
-            <svg
-              class="navigation-icon"
-              aria-hidden="true"
-              focusable="false"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
-              />
-            </svg>
-            Вход</a
-          >
-          <div class="popover popover-entry-form">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <h3 class="popover-title popover-entry-name">Личный кабинет</h3>
-              <label for="login-name" class="visually-hidden"
-                >Адрес электронной почты</label
+          <div class="header-button-popover">
+            <a class="header-button" href="#">
+              <svg
+                class="navigation-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
               >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
+                />
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </a>
+            <div class="popover popover-search-form">
+              <label for="search" class="visually-hidden">Поиск по сайту</label>
               <input
                 class="field"
-                type="email"
-                id="login-name"
-                name="login-name"
-                placeholder="email@example.com"
-                value="email@example.com"
-                required
+                type="search"
+                id="search"
+                name="search"
+                placeholder="|Поиск по сайту"
               />
-              <label for="login-password" class="visually-hidden">Пароль</label>
-              <input
-                class="field"
-                type="password"
-                id="login-password"
-                name="login-password"
-                placeholder="password"
-                value="123456"
-                required
-              />
-            </form>
-            <div class="popover-entry-footer">
-              <button type="submit" class="button-pink">Войти</button>
-              <div class="popover-entry-links">
-                <a class="entry-link" href="#">Забыли пароль?</a>
-                <a class="entry-link" href="#">Регистрация</a>
+            </div>
+          </div>
+          <div class="header-button-popover">
+            <a class="header-button header-button-svg" href="#">
+              <svg
+                class="navigation-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
+                />
+              </svg>
+              Вход</a
+            >
+            <div class="popover popover-entry-form">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <h3 class="popover-title popover-entry-name">Личный кабинет</h3>
+                <label for="login-name" class="visually-hidden"
+                  >Адрес электронной почты</label
+                >
+                <input
+                  class="field"
+                  type="email"
+                  id="login-name"
+                  name="login-name"
+                  placeholder="email@example.com"
+                  value="email@example.com"
+                  required
+                />
+                <label for="login-password" class="visually-hidden"
+                  >Пароль</label
+                >
+                <input
+                  class="field"
+                  type="password"
+                  id="login-password"
+                  name="login-password"
+                  placeholder="password"
+                  value="123456"
+                  required
+                />
+              </form>
+              <div class="popover-entry-footer">
+                <button type="submit" class="button-pink">Войти</button>
+                <div class="popover-entry-links">
+                  <a class="entry-link" href="#">Забыли пароль?</a>
+                  <a class="entry-link" href="#">Регистрация</a>
+                </div>
               </div>
             </div>
           </div>
-          <a
-            class="header-button header-button-basket header-button-svg"
-            href="#"
-          >
-            <svg
-              class="navigation-icon"
-              aria-hidden="true"
-              focusable="false"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="header-button-popover">
+            <a
+              class="header-button header-button-basket header-button-svg"
+              href="#"
             >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
-              />
-            </svg>
-            <span class="visually-hidden">Корзина</span>2 товара
-          </a>
-          <div class="popover-basket">
+              <svg
+                class="navigation-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                />
+              </svg>
+              <span class="visually-hidden">Корзина</span>2 товара
+            </a>
             <div class="popover basket-empty">
               <h3 class="popover-title basket-empty-name">
                 Ваша корзина пока пуста

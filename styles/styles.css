@@ -401,6 +401,7 @@ body {
 }
 
 .navigation-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 530px;
@@ -465,44 +466,6 @@ body {
   margin: auto;
 }
 
-.navigation-item:focus-within .catalog-menu-list {
-  display: block;
-}
-
-.catalog-menu-list {
-  display: none;
-  background-color: #FCFCFC;
-  width: 135px;
-  min-height: 188px;
-  border-radius: 4px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-menu-link {
-  color: #2D3440;
-  font-size: 14px;
-  line-height: 20px;
-  text-decoration: none;
-  margin: 6px auto 6px 16px;
-}
-
-.catalog-new-link {
-  font-weight: 700;
-  margin: 8px auto 8px 16px;
-}
-
-.header-phone-link {
-  display: block;
-  color: #2D3440;
-  font-weight: 700;
-  line-height: 20px;
-  text-decoration: none;
-  padding: 6px 0;
-  margin: 0 16px 0 0;
-}
-
 .popover {
   position: absolute;
   top: 54px;
@@ -518,16 +481,78 @@ body {
   display: none;
 }
 
-.popover-open {
-  display: block;
-}
-
 .popover-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   margin: 0 0 32px 0;
   padding: 0;
+}
+
+.navigation-item:focus-within .popover {
+  display: block;
+}
+
+.header-button-popover:focus-within .popover {
+  display: block;
+}
+
+.catalog-menu-list {
+  position: absolute;
+  top: 40px;
+  left: 16px;
+  width: 135px;
+  min-height: 188px;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px 0px;
+}
+
+.catalog-menu-link {
+  display: block;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 6px 0 6px 16px;
+}
+
+.catalog-menu-link:hover {
+  background-color: #FFCBD8;
+}
+
+.catalog-menu-link:active {
+  background-color: #FF7799;
+}
+
+.catalog-menu-link-current {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+
+.catalog-new-link {
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.catalog-new-link::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 16px;
+  right: 16px;
+  height: 0;
+  border-bottom: 1px solid #B9B9B9;
+}
+
+.header-phone-link {
+  display: block;
+  color: #2D3440;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 6px 0;
+  margin: 0 16px 0 0;
 }
 
 .popover-search-form {

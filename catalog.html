@@ -78,6 +78,7 @@
             </svg>
             Вход</a
           >
+          <div class="header-button-popover">
           <a class="header-button header-button-svg" href="#">
             <svg
               class="navigation-icon"
@@ -97,9 +98,48 @@
             </svg>
             <span class="visually-hidden">Корзина</span>2 товара
           </a>
-          <div class="basket-full">
-            <h3 class="basket-full-name">Корзина</h3>
+          <div class="popover basket-full">
+            <h3 class="popover-title">Корзина</h3>
+            <ul class="basket-product-list">
+              <li class="basket-product-item">
+                <img
+                  class="basket-product-image"
+                  src="/images/catalog/raspberry.jpg"
+                  width="46px"
+                  height="46px"
+                  alt="Шарик ярко-розового мороженого."
+                />
+                <span class="basket-product-name">Малинка</span>
+                <span class="basket-product-about">1 кг х 310 ₽</span>
+                <span class="basket-product-price">310 ₽</span>
+                <button class="basket-product-button">
+                  <span class="visually-hidden">Удалить</span>
+                </button>
+              </li>
+              <li class="basket-product-item">
+                <img
+                  class="basket-product-image"
+                  src="/images/catalog/bubble-gum.jpg"
+                  width="46px"
+                  height="46px"
+                  alt="Шарик голубого мороженого с радужной посыпкой."
+                />
+                <span class="basket-product-name">Бабл-гам</span>
+                <span class="basket-product-about">1,5 кг х 320 ₽</span>
+                <span class="basket-product-price">480 ₽</span>
+                <button class="basket-product-button">
+                  <span class="visually-hidden">Удалить</span>
+                </button>
+              </li>
+            </ul>
+            <div class="basket-order">
+              <button type="submit" class="button-pink">
+                Оформить заказ
+              </button>
+              <span class="basket-total">Итого: 790 ₽</span>
+            </div>
           </div>
+        </div>
         </div>
       </div>
     </header>
