@@ -655,7 +655,27 @@
               method="post"
             >
               <div class="delivery-form-date">
-                <label class="form-label" for="delivery-date">Дата</label>
+                <span class="form-label">
+                  <label class="form-label" for="delivery-date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                        />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите желаемую дату доставки</span>
+                  </span>
+                </span>
                 <input
                   class="field"
                   type="text"
@@ -790,18 +810,48 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-name">Мы обязательно ответим вам!</h2>
-          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form
+            class="auth-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
             <div class="field-group">
               <label class="visually-hidden" for="full-name">ФИО</label>
-              <input class="auth-form-field field" type="text" id="full-name" name="full-name" placeholder="Имя и фамилия" required>
+              <input
+                class="auth-form-field field"
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Имя и фамилия"
+                required
+              />
             </div>
             <div class="field-group">
-              <label class="visually-hidden" for="modal-email">Электронная почта</label>
-              <input class="auth-form-field field" type="text" id="modal-email" name="modal-email" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="modal-email"
+                >Электронная почта</label
+              >
+              <input
+                class="auth-form-field field"
+                type="text"
+                id="modal-email"
+                name="modal-email"
+                placeholder="email@example.com"
+                required
+              />
             </div>
             <div class="field-group">
-              <label class="visually-hidden" for="feedback">Ваше сообщение</label>
-              <textarea class="auth-form-field field" type="text" id="feedback" name="feedback" placeholder="В свободной форме" rows="6" required></textarea>
+              <label class="visually-hidden" for="feedback"
+                >Ваше сообщение</label
+              >
+              <textarea
+                class="auth-form-field field"
+                type="text"
+                id="feedback"
+                name="feedback"
+                placeholder="В свободной форме"
+                rows="6"
+                required
+              ></textarea>
             </div>
             <button class="button-pink modal-button" type="submit">
               Отправить

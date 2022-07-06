@@ -1300,6 +1300,40 @@ body {
   margin-top: 28px;
 }
 
+.tooltip {
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: 2D3440;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #FFFFFF;
+  color: #565C66;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 10px 8px 10px 15px;
+
+
+
+  border-radius: 8px;
+  display: block;
+  width: 160px;
+}
+
 .page-footer {
   display: flex;
   margin-top: auto;
@@ -1500,7 +1534,7 @@ body {
   text-decoration: none;
 }
 
-.breadcrumbs-catalog {
+.breadcrumbs-link-current {
   text-decoration: underline;
 }
 
@@ -1657,6 +1691,7 @@ body {
   position: relative;
   display: block;
   padding: 0 16px 0 24px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -1680,8 +1715,39 @@ body {
   border-color: #FCFCFC;
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled + .control-mark,
+.control-input[type="checkbox"]:checked:disabled + .control-mark-checkbox,
+.control-input[type="radio"]:checked:disabled + .control-mark-radio::before {
   opacity: 50%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-checkbox {
+  background-image: url("/images/input-buttons/checkbox-default.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  border: none;
+}
+
+.control-input[type="checkbox"]:checked:hover + .control-mark-checkbox {
+  background-image: url("/images/input-buttons/checkbox-hover.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  border: none;
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: #2d3440;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="radio"]:checked:hover + .control-mark-radio::before {
+  background-color: #FCFCFC;
 }
 
 .catalog-products {
