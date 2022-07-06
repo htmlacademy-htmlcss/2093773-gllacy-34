@@ -783,6 +783,33 @@
         </p>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-name">Мы обязательно ответим вам!</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="visually-hidden" for="full-name">ФИО</label>
+              <input class="auth-form-field field" type="text" id="full-name" name="full-name" placeholder="Имя и фамилия" required>
+            </div>
+            <div class="field-group">
+              <label class="visually-hidden" for="modal-email">Электронная почта</label>
+              <input class="auth-form-field field" type="text" id="modal-email" name="modal-email" placeholder="email@example.com" required>
+            </div>
+            <div class="field-group">
+              <label class="visually-hidden" for="feedback">Ваше сообщение</label>
+              <textarea class="auth-form-field field" type="text" id="feedback" name="feedback" placeholder="В свободной форме" rows="6" required></textarea>
+            </div>
+            <button class="button-pink modal-button" type="submit">
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>

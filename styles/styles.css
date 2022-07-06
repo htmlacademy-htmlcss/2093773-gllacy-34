@@ -607,6 +607,7 @@ body {
 }
 
 .basket-product-item {
+  position: relative;
   display: grid;
   grid-template-columns: 62px 164px 103px 16px;
   margin-bottom: 24px;
@@ -636,13 +637,19 @@ body {
   align-self: center;
 }
 
-.basket-product-button {
+.basket-product-button  {
   grid-row: 1/3;
-  background-image: url("/images/icons/cross.svg");
-  background-color: inherit;
-  background-repeat: no-repeat;
+  position: absolute;
+  padding: 0;
+  top: 15px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #FCFCFC;
   border: none;
-  margin-top: 14px;
+  background-image: url("/images/icons/cross.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .basket-product-item:last-child {
@@ -1399,6 +1406,74 @@ body {
 
 .footer-copyright-link {
   color: #2D3440;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 52, 64, 0.3);;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background-color: #FCFCFC;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.modal-auth {
+  width: 570px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 20px;
+  background-color: #FCFCFC;
+  border: none;
+  background-image: url("/images/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-name {
+  margin: 0 0 32px 0;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.auth-form .field-group {
+  margin: 0 0 16px 0;
+}
+
+.auth-form-field {
+  width: 442px;
+}
+
+.auth-form-field:last-child {
+  margin: 0 0 16px 0;
+}
+
+.modal-button {
+  display: block;
+  margin-left: auto;
 }
 
 .inner-header-name {
