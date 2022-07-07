@@ -848,6 +848,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 91px 30px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -1514,13 +1515,13 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 0 0 40px 0;
+  margin: 0 0 38px 0;
   padding: 0;
 }
 
 .breadcrumbs-list {
   display: flex;
-  margin: 32px 0 16px 0;
+  margin: 31px 0 16px 0;
   padding: 0;
   list-style-type: none;
 }
@@ -1550,7 +1551,7 @@ body {
 }
 
 .catalog-filter {
-  margin-bottom: 95px;
+  margin-bottom: 78px;
 }
 
 .catalog-filter-form {
@@ -1574,6 +1575,7 @@ body {
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
+  width: 196px;
   padding: 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
@@ -1680,7 +1682,7 @@ body {
 }
 
 .toggle-min {
-  left: -10px;
+  left: -15px;
 }
 
 .toggle-max {
@@ -1692,6 +1694,10 @@ body {
   display: block;
   padding: 0 16px 0 24px;
   cursor: pointer;
+}
+
+.catalog-filter-item:last-child .control {
+  padding-right: 0;
 }
 
 .control-mark {
@@ -1770,6 +1776,10 @@ body {
   line-height: 20px;
 }
 
+.product-list-catalog {
+  margin-bottom: 14px;
+}
+
 .pagination-container {
   display: flex;
   align-items: center;
@@ -1841,16 +1851,20 @@ body {
 
 .pagination-button {
   margin: 0 0 0 484px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .pagination-prev {
   position: absolute;
-  left: 0;
+  left: -5px;
 }
 
 .pagination-next {
   position: absolute;
-  right: 16px;
+  right: 8px;
 }
 
 .pagination-container::after {
