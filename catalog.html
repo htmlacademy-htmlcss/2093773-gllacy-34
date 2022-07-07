@@ -174,13 +174,12 @@
             method="get"
           >
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-name" for="select">
+              <legend class="catalog-filter-name">
                 Сортировка:
               </legend>
               <select
                 class="select-control"
                 aria-label="Сортировка"
-                id="select"
               >
                 <option value="popular">по популярности</option>
                 <option value="cheap">по возрастанию цены</option>
@@ -188,8 +187,7 @@
               </select>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <div class="range-price">
-                <legend class="catalog-filter-name">Цена:</legend>
+                <legend class="catalog-filter-name">Цена:
                 <label class="catalog-filter-label">
                   <input
                     class="range-input"
@@ -209,8 +207,8 @@
                   />
                   ₽
                 </label>
-              </div>
-              <div class="range">
+              </legend>
+              <div class="range range-price">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 40px; width: 56px">
                     <button type="button" class="range-toggle toggle-min">

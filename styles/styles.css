@@ -1599,16 +1599,26 @@ body {
 .catalog-filter-name {
   margin: 0 0 8px 16px;
   padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter-group:nth-child(2) .catalog-filter-name {
+  display: flex;
 }
 
 .select-control {
+  background-image: url(/images/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 13px center;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
   width: 196px;
-  padding: 8px 16px;
+  padding: 8px 13px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
+  appearance: none;
   border: none;
 }
 
@@ -1640,7 +1650,6 @@ body {
 }
 
 .range-price {
-  display: flex;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
@@ -1796,11 +1805,6 @@ body {
   width: 825px;
 }
 
-.catalog-filter-name {
-  font-size: 14px;
-  line-height: 20px;
-}
-
 .control {
   font-size: 14px;
   line-height: 20px;
@@ -1906,5 +1910,6 @@ body {
   height: 0;
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
+
 
 
