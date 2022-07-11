@@ -4,10 +4,9 @@
     <meta charset="utf-8" />
     <title>Gllacy Shop. Магазин мороженого</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
   </head>
-
   <body>
     <header class="container">
       <div class="header-links">
@@ -24,6 +23,7 @@
             <ul class="navigation-list">
               <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Каталог</a>
+                <!-- Открытие меню каталога происходит при наведении на ссылку "Каталог" -->
                 <ul class="popover catalog-menu-list">
                   <li class="catalog-menu-item">
                     <a class="catalog-menu-link catalog-new-link" href="#">
@@ -77,10 +77,13 @@
                   d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
                 />
               </svg>
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden">Поиск.</span>
             </a>
+            <!-- Открытие поповера происходит при клике на кнопку "Лупа", блоку "popover-search-form" добавляется класс "on-click" на JS -->
             <div class="popover popover-search-form">
-              <label for="search" class="visually-hidden">Поиск по сайту</label>
+              <label for="search" class="visually-hidden">
+                Поиск по сайту.
+              </label>
               <input
                 class="field"
                 type="search"
@@ -112,12 +115,13 @@
               </svg>
               Вход</a
             >
+            <!-- Открытие поповера происходит при клике на кнопку "Вход", блоку "popover-entry-form" добавляется класс "on-click" на JS -->
             <div class="popover popover-entry-form">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <h3 class="popover-title popover-entry-name">Личный кабинет</h3>
-                <label for="login-name" class="visually-hidden"
-                  >Адрес электронной почты</label
-                >
+                <label for="login-name" class="visually-hidden"></label>
+                  Адрес электронной почты.
+                </label>
                 <input
                   class="field"
                   type="email"
@@ -125,11 +129,8 @@
                   name="login-name"
                   placeholder="email@example.com"
                   value="email@example.com"
-                  required
                 />
-                <label for="login-password" class="visually-hidden"
-                  >Пароль</label
-                >
+                <label for="login-password" class="visually-hidden">Пароль.</label>
                 <input
                   class="field"
                   type="password"
@@ -137,7 +138,6 @@
                   name="login-password"
                   placeholder="password"
                   value="123456"
-                  required
                 />
               </form>
               <div class="popover-entry-footer">
@@ -172,13 +172,15 @@
                   d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                 />
               </svg>
-              <span class="visually-hidden">Корзина</span>2 товара
+              <span class="visually-hidden">Корзина.</span>2 товара
             </a>
+            <!-- Открытие поповера происходит при клике на кнопку "Корзина" (если корзина пуста), блоку "basket-empty" добавляется класс "on-click" на JS -->
             <div class="popover basket-empty">
               <h3 class="popover-title basket-empty-name">
                 Ваша корзина пока пуста
               </h3>
             </div>
+            <!-- Открытие поповера происходит при клике на кнопку "Корзина" (если в корзине есть товар/ры), блоку "basket-full" добавляется класс "on-click" на JS -->
             <div class="popover basket-full">
               <h3 class="popover-title">Корзина</h3>
               <ul class="basket-product-list">
@@ -194,7 +196,7 @@
                   <span class="basket-product-about">1 кг х 310 ₽</span>
                   <span class="basket-product-price">310 ₽</span>
                   <button class="basket-product-button">
-                    <span class="visually-hidden">Удалить</span>
+                    <span class="visually-hidden">Удалить.</span>
                   </button>
                 </li>
                 <li class="basket-product-item">
@@ -209,7 +211,7 @@
                   <span class="basket-product-about">1,5 кг х 320 ₽</span>
                   <span class="basket-product-price">480 ₽</span>
                   <button class="basket-product-button">
-                    <span class="visually-hidden">Удалить</span>
+                    <span class="visually-hidden.">Удалить</span>
                   </button>
                 </li>
               </ul>
@@ -224,11 +226,10 @@
         </div>
       </div>
     </header>
-
     <main class="main-container">
-      <h1 class="visually-hidden">Gllacy Shop. Магазин мороженого</h1>
+      <h1 class="visually-hidden">Gllacy Shop. Магазин мороженого.</h1>
       <section class="slider container">
-        <h2 class="visually-hidden">Наше лучшее мороженое</h2>
+        <h2 class="visually-hidden">Наше лучшее мороженое.</h2>
         <div class="slider-slides">
           <div class="slide is-active" data-color="#feafc3">
             <div class="slide-content">
@@ -313,7 +314,7 @@
                   d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
                 />
               </svg>
-              <span class="visually-hidden">Назад</span>
+              <span class="visually-hidden">Назад.</span>
             </button>
             <button class="slider-control-button slider-next" type="button">
               <svg
@@ -334,30 +335,30 @@
                   d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
                 />
               </svg>
-              <span class="visually-hidden">Вперед</span>
+              <span class="visually-hidden">Вперед.</span>
             </button>
           </div>
         </div>
         <div class="slider-footer">
           <div class="slider-pagination">
             <button class="slider-pagination-button is-active" type="button">
-              <span class="visually-hidden">1 слайд</span>
+              <span class="visually-hidden">1 слайд.</span>
             </button>
             <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 слайд</span>
+              <span class="visually-hidden">2 слайд.</span>
             </button>
             <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 слайд</span>
+              <span class="visually-hidden">3 слайд.</span>
             </button>
           </div>
           <div class="slider-social">
-            <ul class="social-list">
+            <ul class="social-list social-list-slider">
               <li class="social-item">
                 <a
                   class="social-button social-button-tg"
                   href="https://t.me/htmlacademy"
                 >
-                  <span class="visually-hidden">Telegram</span>
+                  <span class="visually-hidden">Telegram.</span>
                 </a>
               </li>
               <li class="social-item">
@@ -365,7 +366,7 @@
                   class="social-button social-button-vk"
                   href="https://vk.com/htmlacademy"
                 >
-                  <span class="visually-hidden">Vkontakte</span>
+                  <span class="visually-hidden">Vkontakte.</span>
                 </a>
               </li>
               <li class="social-item">
@@ -373,14 +374,13 @@
                   class="social-button social-button-yt"
                   href="https://www.youtube.com/user/htmlacademyru"
                 >
-                  <span class="visually-hidden">Youtube</span>
+                  <span class="visually-hidden">Youtube.</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </section>
-
       <section class="promo container">
         <h2 class="main-headlines promo-headline">
           Заказывайте мороженое и получайте подарки!
@@ -405,7 +405,6 @@
           </div>
         </div>
       </section>
-
       <section class="popular container">
         <h2 class="main-headlines popular-headline">
           Попробуйте самые популярные вкусы нашего мороженого
@@ -446,7 +445,7 @@
                     d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                   />
                 </svg>
-                <span class="visually-hidden">Добавить в корзину</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </a>
             </div>
           </li>
@@ -485,7 +484,7 @@
                     d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                   />
                 </svg>
-                <span class="visually-hidden">Добавить в корзину</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </a>
             </div>
           </li>
@@ -525,7 +524,7 @@
                     d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                   />
                 </svg>
-                <span class="visually-hidden">Добавить в корзину</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </a>
             </div>
           </li>
@@ -565,17 +564,16 @@
                     d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                   />
                 </svg>
-                <span class="visually-hidden">Добавить в корзину</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </a>
             </div>
           </li>
         </ul>
       </section>
-
       <section class="container">
         <div class="advantages-wrapper">
           <div class="advantages-wrapper-white">
-            <h2 class="visually-hidden">Наши преимущества</h2>
+            <h2 class="visually-hidden">Наши преимущества.</h2>
             <p class="main-headlines advantages-headline">
               Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
               собственного производства на развес
@@ -613,7 +611,6 @@
           </div>
         </div>
       </section>
-
       <div class="news-subscription container">
         <section class="news">
           <h2 class="news-name">Новое в нашем блоге</h2>
@@ -624,7 +621,7 @@
         </section>
         <section class="subscription">
           <div class="subscription-wrapper">
-            <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
+            <h2 class="visually-hidden">Подпишитесь на рассылку.</h2>
             <p class="subscription-text">
               Подпишитесь на нашу сладкую рассылку и будьте всегда <br />
               в курсе всего самого вкусного, что у нас происходит. Обещаем не
@@ -636,7 +633,7 @@
               method="post"
             >
               <label class="visually-hidden" for="subscription-email">
-                Email
+                Email.
               </label>
               <input
                 class="field"
@@ -644,14 +641,14 @@
                 type="email"
                 name="subscription-email"
                 id="subscription-email"
-                required
               />
-              <button class="button-pink" type="submit">Отправить</button>
+              <button class="button-pink subscription-button" type="submit">
+                Отправить
+              </button>
             </form>
           </div>
         </section>
       </div>
-
       <section class="container">
         <div class="delivery-wrapper">
           <div class="delivery-content">
@@ -699,9 +696,10 @@
                         />
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date"
-                      >Укажите желаемую дату доставки</span
-                    >
+                    <span
+                      class="tooltip-text"
+                      role="tooltip"
+                      id="tooltip-label-date"> Укажите желаемую дату доставки </span>
                   </span>
                 </span>
                 <input
@@ -710,7 +708,6 @@
                   id="delivery-date"
                   name="delivery-date"
                   placeholder="01.04.2020"
-                  required
                 />
               </div>
               <div class="delivery-form-phone">
@@ -721,7 +718,6 @@
                   id="delivery-phone"
                   name="delivery-phone"
                   placeholder="+7 800 999-00-00"
-                  required
                 />
               </div>
               <div class="delivery-form-address">
@@ -749,7 +745,10 @@
                         />
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address"
+                    <span
+                      class="tooltip-text"
+                      role="tooltip"
+                      id="tooltip-label-address"
                       >Введите название улицы, дома и квартиры</span
                     >
                   </span>
@@ -760,7 +759,6 @@
                   id="delivery-address"
                   name="delivery-address"
                   placeholder="ул. Большая Конюшенная, 19/8"
-                  required
                 />
               </div>
               <button class="button-pink form-button" type="submit">
@@ -770,11 +768,10 @@
           </div>
         </div>
       </section>
-
       <section class="container">
         <div class="contacts-wrapper">
           <div class="contacts-wrapper-white">
-            <h2 class="visually-hidden">Контакты</h2>
+            <h2 class="visually-hidden">Контакты.</h2>
             <h3 class="contacts-name">
               Адрес главного офиса <br />
               и офлайн-магазина:
@@ -797,7 +794,6 @@
         </div>
       </section>
     </main>
-
     <footer class="page-footer container">
       <div class="social-footer">
         <ul class="social-list">
@@ -806,7 +802,7 @@
               class="social-button social-button-tg"
               href="https://t.me/htmlacademy"
             >
-              <span class="visually-hidden">Telegram</span>
+              <span class="visually-hidden">Telegram.</span>
             </a>
           </li>
           <li class="social-item">
@@ -814,7 +810,7 @@
               class="social-button social-button-vk"
               href="https://vk.com/htmlacademy"
             >
-              <span class="visually-hidden">Vkontakte</span>
+              <span class="visually-hidden">Vkontakte.</span>
             </a>
           </li>
           <li class="social-item">
@@ -822,25 +818,27 @@
               class="social-button social-button-yt"
               href="https://www.youtube.com/user/htmlacademyru"
             >
-              <span class="visually-hidden">Youtube</span>
+              <span class="visually-hidden">Youtube.</span>
             </a>
           </li>
         </ul>
       </div>
-      <ul class="footer-link-list">
-        <li class="footer-link-item">
-          <a class="link-item suppliers" href="#">Для поставщиков</a>
-        </li>
-        <li class="footer-link-item">
-          <a class="link-item" href="#">О производстве</a>
-        </li>
-        <li class="footer-link-item">
-          <a class="link-item" href="#">Наши документы</a>
-        </li>
-        <li class="footer-link-item">
-          <a class="link-item" href="#">Экологические стандарты</a>
-        </li>
-      </ul>
+      <div class="footer-list-wrapper">
+        <ul class="footer-link-list">
+          <li class="footer-link-item">
+            <a class="link-item suppliers" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-link-item">
+            <a class="link-item" href="#">О производстве</a>
+          </li>
+          <li class="footer-link-item">
+            <a class="link-item" href="#">Наши документы</a>
+          </li>
+          <li class="footer-link-item">
+            <a class="link-item" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
       <div class="footer-copyright">
         <a class="footer-copyright-logo-link" href="https://htmlacademy.ru/">
           <img
@@ -859,10 +857,12 @@
         </p>
       </div>
     </footer>
+    <!-- Открытие модального окна происходит при клике на кнопку "Форма обратной
+    связи", с блока "modal-container" снимается класс "modal-container-close" на JS -->
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-name">Мы обязательно ответим вам!</h2>
@@ -872,19 +872,18 @@
             method="post"
           >
             <div class="field-group">
-              <label class="visually-hidden" for="full-name">ФИО</label>
+              <label class="visually-hidden" for="full-name">ФИО.</label>
               <input
                 class="auth-form-field field"
                 type="text"
                 id="full-name"
                 name="full-name"
                 placeholder="Имя и фамилия"
-                required
               />
             </div>
             <div class="field-group">
               <label class="visually-hidden" for="modal-email"
-                >Электронная почта</label
+                >Электронная почта.</label
               >
               <input
                 class="auth-form-field field"
@@ -892,20 +891,16 @@
                 id="modal-email"
                 name="modal-email"
                 placeholder="email@example.com"
-                required
               />
             </div>
             <div class="field-group">
-              <label class="visually-hidden" for="feedback"
-                >Ваше сообщение</label
-              >
+              <label class="visually-hidden" for="feedback"> Ваше сообщение.</label>
               <textarea
                 class="auth-form-field field"
                 id="feedback"
                 name="feedback"
                 placeholder="В свободной форме"
                 rows="6"
-                required
               ></textarea>
             </div>
             <button class="button-pink modal-button" type="submit">
