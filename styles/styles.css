@@ -168,7 +168,7 @@ body {
 }
 
 .button-white-loading {
-  background-image: url("/images/icons/spinner-for-white.svg");
+  background-image: url("../images/icons/spinner-for-white.svg");
   background-repeat: no-repeat;
   padding-right: 56px;
   background-size: 16px 16px;
@@ -224,7 +224,7 @@ body {
 }
 
 .button-pink-loading {
-  background-image: url("/images/icons/spinner-for-pink.svg");
+  background-image: url("../images/icons/spinner-for-pink.svg");
   background-repeat: no-repeat;
   padding-right: 56px;
   background-size: 16px 16px;
@@ -671,7 +671,7 @@ body {
   height: 16px;
   background-color: #FCFCFC;
   border: none;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url("../images/icons/cross.svg");
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -819,8 +819,9 @@ body {
 }
 
 .promo-container {
-  display: flex;
-  justify-content: space-between;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .promo-offer {
@@ -973,9 +974,9 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 32px;
   margin: 0;
   padding: 0;
 }
@@ -983,7 +984,6 @@ body {
 .advantages-item {
   width: 505px;
   list-style-type: none;
-  margin-bottom: 40px;
   padding-left: 64px;
   background-repeat: no-repeat;
   background-size: 32px 32px;
@@ -994,17 +994,12 @@ body {
   margin: 0;
 }
 
-.advantages-item:nth-child(3),
-.advantages-item:nth-child(4) {
-  margin-bottom: 0;
-}
-
 .advantages-item-text {
   color: #565C66;
 }
 
 .advantages-item-ice-cream {
-  background-image: url("/images/icons/ice-cream.svg");
+  background-image: url("../images/icons/ice-cream.svg");
   position: relative;
 }
 
@@ -1020,7 +1015,7 @@ body {
 }
 
 .advantages-item-cow {
-  background-image: url("/images/icons/cow.svg");
+  background-image: url("../images/icons/cow.svg");
   position: relative;
 }
 
@@ -1036,7 +1031,7 @@ body {
 }
 
 .advantages-item-leaf {
-  background-image: url("/images/icons/leaf.svg");
+  background-image: url("../images/icons/leaf.svg");
   position: relative;
 }
 
@@ -1052,7 +1047,7 @@ body {
 }
 
 .advantages-item-thermometer {
-  background-image: url("/images/icons/thermometer.svg");
+  background-image: url("../images/icons/thermometer.svg");
   position: relative;
 }
 
@@ -1480,15 +1475,15 @@ body {
 }
 
 .social-button-tg {
-  background-image: url("/images/social/telegram.svg");
+  background-image: url("../images/social/telegram.svg");
 }
 
 .social-button-vk {
-  background-image: url("/images/social/vk.svg");
+  background-image: url("../images/social/vk.svg");
 }
 
 .social-button-yt {
-  background-image: url("/images/social/youtube.svg");
+  background-image: url("../images/social/youtube.svg");
 }
 
 .footer-list-wrapper {
@@ -1527,7 +1522,7 @@ body {
 
 .suppliers {
   font-weight: 700;
-  background-image: url("/images/icons/heart-fill.svg");
+  background-image: url("../images/icons/heart-fill.svg");
   background-repeat: no-repeat;
 }
 
@@ -1584,7 +1579,7 @@ body {
   height: 20px;
   background-color: #FCFCFC;
   border: none;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url("../images/icons/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1655,7 +1650,7 @@ body {
 
 .breadcrumbs-link::after {
   position: absolute;
-  background-image: url("/images/icons/chevrons-right.svg");
+  background-image: url("../images/icons/chevrons-right.svg");
   background-repeat: no-repeat;
   width: 12px;
   height: 12px;
@@ -1692,7 +1687,7 @@ body {
 }
 
 .select-control {
-  background-image: url(/images/icons/arrow-down.svg);
+  background-image: url("../images/icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 13px center;
   font-family: inherit;
@@ -1857,14 +1852,14 @@ body {
 }
 
 .control-input[type="checkbox"]:checked+.control-mark-checkbox {
-  background-image: url("/images/input-buttons/checkbox-default.svg");
+  background-image: url("../images/input-buttons/checkbox-default.svg");
   background-repeat: no-repeat;
   background-size: 16px;
   border: none;
 }
 
 .control-input[type="checkbox"]:checked:hover+.control-mark-checkbox {
-  background-image: url("/images/input-buttons/checkbox-hover.svg");
+  background-image: url("../images/input-buttons/checkbox-hover.svg");
   background-repeat: no-repeat;
   background-size: 16px;
   border: none;
